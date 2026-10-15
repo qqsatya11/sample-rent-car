@@ -299,6 +299,9 @@
     .navrow{height:64px}
     .mobile-menu{top:64px}
     .hero .wrap{padding-block:30px 72px}
+    .fabs{left:auto;right:max(14px,env(safe-area-inset-right,0px));flex-direction:row}
+    .fab{width:48px;height:48px}
+    .fab svg{width:23px;height:23px}
     .catgrid,.cars,.why{grid-template-columns:1fr}
     .frow,.opts,.pick,.abstats{grid-template-columns:1fr}
     .panel{padding:20px}
