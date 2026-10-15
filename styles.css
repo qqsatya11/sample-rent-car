@@ -98,7 +98,7 @@
   .hero.has-photo::before{background:linear-gradient(90deg,rgba(18,16,13,.94) 0%,rgba(18,16,13,.78) 45%,rgba(18,16,13,.4) 100%),radial-gradient(760px 420px at 85% 0%,rgba(216,169,63,.18),transparent 60%)}
 
   /* reservation widget */
-  .bk{background:color-mix(in srgb, var(--card) 82%, transparent);backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%);border:1px solid var(--line);border-radius:16px;box-shadow:0 34px 70px -30px rgba(0,0,0,.6);padding:18px;color:var(--tx)}
+  .bk{background:color-mix(in srgb, var(--card) 60%, transparent);backdrop-filter:blur(16px) saturate(125%);-webkit-backdrop-filter:blur(16px) saturate(125%);border:1px solid var(--line);border-radius:16px;box-shadow:0 34px 70px -30px rgba(0,0,0,.6);padding:18px;color:var(--tx)}
   .bk-drv{display:flex;gap:8px;margin-bottom:12px}
   .bk-drv .bt{flex:1;border:1.5px solid var(--line);background:transparent;color:var(--tx-dim);font-family:var(--f);font-weight:600;font-size:13.5px;padding:11px 8px;border-radius:9px}
   .bk-drv .bt.on{border-color:var(--tx);color:var(--tx);box-shadow:inset 0 0 0 1px var(--tx)}
