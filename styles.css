@@ -286,13 +286,19 @@
     .about{grid-template-columns:1fr;gap:30px}
     .foot{grid-template-columns:1fr 1fr}
   }
-  @media (max-width:640px){
+  @media (max-width:900px){
     .topbar .soc{display:none}
     nav.links,.nav-desktop-cta{display:none}
     .burger{display:grid}
     .mobile-menu{display:none;position:absolute;top:74px;left:0;right:0;background:var(--blk);border-top:1px solid var(--blk-line);flex-direction:column;padding:12px 20px 18px;gap:2px}
     .mobile-menu.open{display:flex}
     .mobile-menu button{text-align:left;background:none;border:0;color:var(--on-blk);font-weight:600;font-size:16px;padding:12px 0}
+  }
+  @media (max-width:640px){
+    .topbar .wrap{gap:10px;font-size:12px}
+    .navrow{height:64px}
+    .mobile-menu{top:64px}
+    .hero .wrap{padding-block:30px 72px}
     .catgrid,.cars,.why{grid-template-columns:1fr}
     .frow,.opts,.pick,.abstats{grid-template-columns:1fr}
     .panel{padding:20px}
