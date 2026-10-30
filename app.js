@@ -1,21 +1,17 @@
-var IMGS={"avanza":"assets/avanza.webp","innova":"assets/innova.webp","zenix":"assets/zenix.webp","fortuner":"assets/fortuner.webp","hiace":"assets/hiace.webp","premio":"assets/premio.webp","elf":"assets/elf.webp","alphard":"assets/alphard.webp"};
+var IMGS={"innova":"assets/innova.webp","zenix":"assets/zenix.webp","hiace":"assets/hiace.webp","premio":"assets/premio.webp","alphard":"assets/alphard.webp"};
 var CARS=[
-  {id:'avanza',name:'Toyota Avanza',cat:'MPV',price:350000,seat:7,hot:false},
   {id:'innova',name:'Innova Reborn',cat:'MPV',price:500000,seat:7,hot:true},
   {id:'zenix',name:'Innova Zenix',cat:'MPV',price:600000,seat:7,hot:true},
-  {id:'fortuner',name:'Fortuner VRZ',cat:'SUV',price:850000,seat:7,hot:false},
   {id:'hiace',name:'Toyota HiAce',cat:'Van',price:1000000,seat:14,hot:false},
   {id:'premio',name:'HiAce Premio',cat:'Van',price:1200000,seat:15,hot:false},
-  {id:'elf',name:'Isuzu Elf Long',cat:'Van',price:1300000,seat:19,hot:false},
   {id:'alphard',name:'Toyota Alphard',cat:'Premium',price:2500000,seat:6,hot:true}
 ];
-var CATS=['Semua','MPV','SUV','Van','Premium'];
+var CATS=['Semua','MPV','Van','Premium'];
 var HERO_SOPIR='assets/hero-sopir.jpg';var HERO_LEPAS='assets/hero-lepas.jpg';
 var CATEGORIES=[
-  {cat:'MPV',img:'zenix',desc:'Keluarga & harian',count:3},
-  {cat:'SUV',img:'fortuner',desc:'Tangguh & gagah',count:1},
-  {cat:'Van',img:'hiace',desc:'Rombongan & wisata',count:3},
-  {cat:'Premium',img:'alphard',desc:'VIP & acara spesial',count:1}
+  {cat:'MPV',img:'zenix',desc:'Keluarga & harian'},
+  {cat:'Van',img:'hiace',desc:'Rombongan & wisata'},
+  {cat:'Premium',img:'alphard',desc:'VIP & acara spesial'}
 ];
 
 function img(id){return IMGS[id]||'';}
@@ -33,7 +29,7 @@ function carCard(c){
       '<div><div class="ie-lab">INCLUDE</div><div class="ie-items inc">'+chk('Mobil')+chk('Sopir')+chk('BBM')+'</div></div>'+
       '<div><div class="ie-lab">EXCLUDE</div><div class="ie-items exc">'+ex('Parkir')+ex('Tiket Wisata')+ex('Makan Sopir')+ex('Tip Sopir')+'</div></div>'+
       '<div class="car-foot"><div class="car-price"><div class="fd">FullDay</div><div class="amt tnum">'+rupiah(c.price)+'</div></div>'+
-      '<button class="btn btn-gold" onclick="bookCar(\''+c.id+'\')">Pesan</button></div>'+
+      '<button class="btn btn-primary" onclick="bookCar(\''+c.id+'\')">Pesan</button></div>'+
     '</div></article>';
 }
 var curFilter='Semua';
@@ -50,7 +46,7 @@ function setFilter(c){curFilter=c;renderFilters();renderCars();}
 function filterTo(c){curFilter=c;renderFilters();renderCars();go('mobil');}
 function renderCatCards(){document.getElementById('catCards').innerHTML=CATEGORIES.map(function(t){
   return '<div class="catc" onclick="filterTo(\''+t.cat+'\')"><div class="ph"><img src="'+img(t.img)+'" alt="'+t.cat+'" loading="lazy"></div>'+
-    '<div class="bd"><div><div class="cn">'+t.cat+'</div><div class="cc">'+t.desc+'</div></div><span class="cnt">'+t.count+' unit</span></div></div>';
+    '<div class="bd"><div><div class="cn">'+t.cat+'</div><div class="cc">'+t.desc+'</div></div><span class="cnt">'+CARS.filter(function(c){return c.cat===t.cat;}).length+' unit</span></div></div>';
 }).join('');}
 
 function go(view){
@@ -60,9 +56,9 @@ function go(view){
   document.getElementById('mobileMenu').classList.remove('open');
   window.scrollTo({top:0,behavior:'smooth'});try{location.hash=view;}catch(e){}
 }
-function toggleTheme(){var root=document.documentElement,cur=root.getAttribute('data-theme');if(!cur)cur=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';var next=cur==='dark'?'light':'dark';root.setAttribute('data-theme',next);try{localStorage.setItem('de-theme',next);}catch(e){}setThemeIcon(next);}
+function toggleTheme(){var root=document.documentElement,cur=root.getAttribute('data-theme');if(!cur)cur=matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light';var next=cur==='dark'?'light':'dark';root.setAttribute('data-theme',next);try{localStorage.setItem('ct-theme',next);}catch(e){}setThemeIcon(next);}
 function setThemeIcon(t){var el=document.getElementById('themeIcon');if(!el)return;if(t==='dark')el.innerHTML='<path d="M21 12.8A9 9 0 1 1 11.2 3 7 7 0 0 0 21 12.8z"/>';else el.innerHTML='<circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/>';}
-(function(){try{var t=localStorage.getItem('de-theme');if(t)document.documentElement.setAttribute('data-theme',t);setThemeIcon(t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));}catch(e){}})();
+(function(){try{var t=localStorage.getItem('ct-theme');if(t)document.documentElement.setAttribute('data-theme',t);setThemeIcon(t||(matchMedia('(prefers-color-scheme:dark)').matches?'dark':'light'));}catch(e){}})();
 
 /* booking */
 var booking={car:null,start:'',end:'',loc:'',driver:'self',note:'',name:'',phone:'',email:'',pax:'',city:''};
@@ -102,11 +98,11 @@ function renderSummary(){var t=calcTotal();if(!t.car)return;var c=t.car;
   h+='<div class="stot"><span class="k">Total estimasi</span><span class="v tnum">'+rupiah(t.total)+'</span></div>';
   document.getElementById('summary').innerHTML=h;}
 function line(k,v){return '<div class="sline"><span class="k">'+k+'</span><span class="v">'+(v||'-')+'</span></div>';}
-function bookingCode(){return 'DE-'+Date.now().toString(36).toUpperCase().slice(-6);}
-function buildMsg(t,c,code){return 'Halo DriveEasy, saya mau konfirmasi booking:%0A%0A*Kode:* '+code+'%0A*Mobil:* '+c.name+' ('+c.cat+')%0A*Ambil:* '+booking.start+'%0A*Kembali:* '+booking.end+'%0A*Lokasi:* '+booking.loc+'%0A*Layanan:* '+(booking.driver==='driver'?'Dengan sopir':'Lepas kunci')+'%0A*Durasi:* '+t.days+' hari%0A'+(booking.note?('*Catatan:* '+booking.note+'%0A'):'')+'%0A*Nama:* '+booking.name+'%0A*WA:* '+booking.phone+'%0A'+(booking.email?('*Email:* '+booking.email+'%0A'):'')+'*Penumpang:* '+booking.pax+'%0A%0A*Total estimasi:* '+rupiah(t.total);}
+function bookingCode(){return 'CT-'+Date.now().toString(36).toUpperCase().slice(-6);}
+function buildMsg(t,c,code){return 'Halo Cabin Trans, saya mau konfirmasi booking:%0A%0A*Kode:* '+code+'%0A*Mobil:* '+c.name+' ('+c.cat+')%0A*Ambil:* '+booking.start+'%0A*Kembali:* '+booking.end+'%0A*Lokasi:* '+booking.loc+'%0A*Layanan:* '+(booking.driver==='driver'?'Dengan sopir':'Lepas kunci')+'%0A*Durasi:* '+t.days+' hari%0A'+(booking.note?('*Catatan:* '+booking.note+'%0A'):'')+'%0A*Nama:* '+booking.name+'%0A*WA:* '+booking.phone+'%0A'+(booking.email?('*Email:* '+booking.email+'%0A'):'')+'*Penumpang:* '+booking.pax+'%0A%0A*Total estimasi:* '+rupiah(t.total);}
 function confirmBooking(){var t=calcTotal(),c=t.car,code=bookingCode();document.getElementById('waLink').href='https://wa.me/'+ADMIN_WA+'?text='+buildMsg(t,c,code);document.getElementById('sucName').textContent=booking.name;document.getElementById('sucCode').textContent=code;document.getElementById('summaryWrap').hidden=true;document.getElementById('successBox').hidden=false;document.querySelector('.book').scrollIntoView({behavior:'smooth',block:'start'});try{window.open(document.getElementById('waLink').href,'_blank');}catch(e){}}
 function resetBooking(){booking={car:null,start:'',end:'',loc:'',driver:'self',note:'',name:'',phone:'',email:'',pax:'',city:''};['bStart','bEnd','cName','cPhone','cEmail','bNote'].forEach(function(id){var el=document.getElementById(id);if(el)el.value='';});document.getElementById('successBox').hidden=true;document.getElementById('summaryWrap').hidden=false;setDriver('self');renderChoose();goStep(1);}
-function waGeneral(){window.open('https://wa.me/'+ADMIN_WA+'?text='+encodeURIComponent('Halo DriveEasy, saya mau tanya soal sewa mobil.'),'_blank');}
+function waGeneral(){window.open('https://wa.me/'+ADMIN_WA+'?text='+encodeURIComponent('Halo Cabin Trans, saya mau tanya soal sewa mobil.'),'_blank');}
 
 function copyText(txt,btn){var done=function(){if(btn){var o=btn.textContent;btn.textContent='Tersalin';setTimeout(function(){btn.textContent=o;},1400);}else toast('Disalin: '+txt);};if(navigator.clipboard&&navigator.clipboard.writeText)navigator.clipboard.writeText(txt).then(done).catch(function(){fbcopy(txt,done);});else fbcopy(txt,done);}
 function fbcopy(txt,done){var ta=document.createElement('textarea');ta.value=txt;document.body.appendChild(ta);ta.select();try{document.execCommand('copy');done();}catch(e){}document.body.removeChild(ta);}
