@@ -81,6 +81,10 @@ nav.links a.active::after{content:"";position:absolute;left:0;right:0;bottom:-2p
 .icon-btn{border:1px solid var(--line);background:transparent;color:var(--tx);width:42px;height:42px;border-radius:10px;display:grid;place-items:center}
 .icon-btn:hover{border-color:var(--brand);color:var(--brand-2)}
 .burger{display:none}
+.lang{display:inline-flex;border:1px solid var(--line);border-radius:10px;padding:3px;gap:2px;background:var(--card)}
+.lang button{border:0;background:transparent;color:var(--tx-dim);font:700 13px var(--f);letter-spacing:.06em;padding:8px 10px;border-radius:7px;min-width:38px}
+.lang button:hover{color:var(--tx)}
+.lang button[aria-pressed="true"]{background:var(--brand);color:#fff}
 .mobile-menu{display:none}
 
 /* ---------- hero ---------- */
@@ -322,7 +326,10 @@ footer{background:var(--alt);border-top:1px solid var(--line);color:var(--tx-dim
   .topbar .tb-co,.tb-mail{display:none}
   .tb-r{margin-left:0}
   .navrow{height:64px}
-  .logo .lg{height:26px}
+  .logo .lg{height:24px}
+  .theme-btn{display:none}
+  .nav-right{gap:8px}
+  .lang button{padding:7px 8px;min-width:34px}
   .hero h1{font-size:clamp(40px,12vw,56px)}
   .qbook{grid-template-columns:1fr 1fr;padding:16px}
   .qbook .qf:first-child,.qbook .qf:nth-child(2){grid-column:span 2}
