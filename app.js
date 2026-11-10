@@ -75,8 +75,7 @@ function renderCars(){
 }
 function renderFilters(){
   $('filters').innerHTML = CATS.map(function(c){
-    var n = c==='Semua' ? CARS.length : CARS.filter(function(x){return x.cat===c;}).length;
-    return '<button class="chip'+(c===curFilter?' on':'')+'" onclick="setFilter(\''+c+'\')">'+c+' <span>'+n+'</span></button>';
+    return '<button class="chip'+(c===curFilter?' on':'')+'" onclick="setFilter(\''+c+'\')">'+c+'</button>';
   }).join('');
 }
 function setFilter(c){curFilter=c;renderFilters();renderCars();}
