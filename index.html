@@ -32,6 +32,7 @@
       <a href="#beranda" data-nav="beranda" onclick="return nav('beranda')" data-i18n="nav.home">Beranda</a>
       <a href="#tentang" data-nav="tentang" onclick="return nav('tentang')" data-i18n="nav.about">Tentang</a>
       <a href="#layanan" data-nav="layanan" onclick="return nav('layanan')" data-i18n="nav.services">Layanan</a>
+      <a href="#tour" data-nav="tour" onclick="return nav('tour')" data-i18n="nav.tour">Tour</a>
       <a href="#armada" data-nav="armada" onclick="return nav('armada')" data-i18n="nav.fleet">Armada</a>
       <a href="#keunggulan" data-nav="keunggulan" onclick="return nav('keunggulan')" data-i18n="nav.why">Keunggulan</a>
       <a href="#kontak" data-nav="kontak" onclick="return nav('kontak')" data-i18n="nav.contact">Kontak</a>
@@ -52,6 +53,7 @@
     <a href="#beranda" onclick="return nav('beranda')" data-i18n="nav.home">Beranda</a>
     <a href="#tentang" onclick="return nav('tentang')" data-i18n="nav.about">Tentang</a>
     <a href="#layanan" onclick="return nav('layanan')" data-i18n="nav.services">Layanan</a>
+    <a href="#tour" onclick="return nav('tour')" data-i18n="nav.tourFull">Tour &amp; Travel</a>
     <a href="#armada" onclick="return nav('armada')" data-i18n="nav.fleet">Armada</a>
     <a href="#keunggulan" onclick="return nav('keunggulan')" data-i18n="nav.why">Keunggulan</a>
     <a href="#kontak" onclick="return nav('kontak')" data-i18n="nav.contact">Kontak</a>
@@ -111,7 +113,7 @@
       <div class="about-copy">
         <span class="kick" data-i18n="about.kick">01 · Tentang Kami</span>
         <h2 data-i18n="about.h2">Armada mewah, pelayanan <span class="hl">kelas penerbangan</span></h2>
-        <p data-i18n="about.p1">Cabin Trans adalah penyedia rental mobil mewah dan city tour organizer yang memadukan armada terawat dengan standar pelayanan kabin pesawat. Didirikan oleh mantan awak kabin, kami membawa disiplin, ketelitian, dan kesantunan penerbangan langsung ke layanan darat untuk kebutuhan <b>VIP, eksekutif, dan wisata kota</b>.</p>
+        <p data-i18n="about.p1">Cabin Trans adalah penyedia rental mobil mewah dan city tour organizer yang memadukan armada terawat dengan standar pelayanan kabin pesawat. Berbekal pengalaman panjang di bidang pelayanan dan transportasi, kami menerapkan disiplin, ketelitian, dan kesantunan standar kabin penerbangan di setiap perjalanan darat untuk kebutuhan <b>VIP, eksekutif, dan wisata kota</b>.</p>
         <p data-i18n="about.p2">Waktu Anda adalah aset: layanan presisi dan tepat waktu dengan harga yang tetap kompetitif.</p>
         <ul class="trio">
           <li><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="2.5"/><path d="M12 14.5V21M9.6 11.2 3.4 9.6M14.4 11.2l6.2-1.6"/></svg></span><div><b>Luxury Fleet</b><span data-i18n="about.f1">Armada mewah terawat, bersih, dan berusia muda.</span></div></li>
@@ -133,11 +135,23 @@
     </div>
   </section>
 
-  <!-- 03 ARMADA -->
-  <section class="sec" id="armada">
+  <!-- 03 TOUR & TRAVEL -->
+  <section class="sec" id="tour">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="kick" data-i18n="fleet.kick">03 · Armada Kami</span><h2 data-i18n="fleet.h2">Tampil berkelas, <span class="hl">tiba dengan nyaman</span></h2></div>
+        <div><span class="kick">03 · Tour &amp; Travel</span><h2 data-i18n="tour.h2">Paket wisata, <span class="hl">dengan armada sendiri</span></h2></div>
+        <p data-i18n="tour.p">Dari golf dan mancing laut sampai outing kantor dan study tour. Semua paket dijalankan dengan armada dan chauffeur Cabin Trans, termasuk penjemputan di bandara, stasiun Whoosh, atau hotel.</p>
+      </div>
+      <div class="tour-feat" id="tourFeat"></div>
+      <div class="tour-grid" id="tourGrid"></div>
+    </div>
+  </section>
+
+  <!-- 04 ARMADA -->
+  <section class="sec alt" id="armada">
+    <div class="wrap">
+      <div class="sec-head">
+        <div><span class="kick" data-i18n="fleet.kick">04 · Armada Kami</span><h2 data-i18n="fleet.h2">Tampil berkelas, <span class="hl">tiba dengan nyaman</span></h2></div>
         <p data-i18n="fleet.p">Lima pilihan unit terawat dan berusia muda. Pilih sesuai jumlah tamu dan kebutuhan perjalanan, lalu pesan langsung secara online.</p>
       </div>
       <div class="filters" id="filters"></div>
@@ -150,7 +164,7 @@
   <section class="pillars" id="keunggulan">
     <div class="wrap">
       <div class="sec-head on-navy">
-        <div><span class="kick" data-i18n="pil.kick">04 · Keunggulan Kami</span><h2 data-i18n="pil.h2">Lima pilar <span class="hl">standar Cabin Trans</span></h2></div>
+        <div><span class="kick" data-i18n="pil.kick">05 · Keunggulan Kami</span><h2 data-i18n="pil.h2">Lima pilar <span class="hl">standar Cabin Trans</span></h2></div>
         <p data-i18n="pil.p">Kenyamanan armada hanyalah standar minimal. Pembeda kami adalah disiplin operasional, standar keselamatan, dan hospitality kelas dunia.</p>
       </div>
       <div class="pil-grid">
@@ -167,7 +181,7 @@
   <section class="sec alt" id="alur">
     <div class="wrap">
       <div class="sec-head">
-        <div><span class="kick" data-i18n="flow.kick">05 · Alur Layanan</span><h2 data-i18n="flow.h2">Lima langkah <span class="hl">mudah</span></h2></div>
+        <div><span class="kick" data-i18n="flow.kick">06 · Alur Layanan</span><h2 data-i18n="flow.h2">Lima langkah <span class="hl">mudah</span></h2></div>
         <p data-i18n="flow.p">Dari konsultasi sampai kwitansi, setiap tahap jelas dan terkoordinasi. Anda cukup menentukan jadwal dan tujuan.</p>
       </div>
       <ol class="steps">
@@ -309,7 +323,7 @@
     </div>
     <div>
       <h4>Menu</h4>
-      <a href="#tentang" onclick="return nav('tentang')" data-i18n="ft.about">Tentang Kami</a><a href="#layanan" onclick="return nav('layanan')" data-i18n="nav.services">Layanan</a><a href="#armada" onclick="return nav('armada')" data-i18n="nav.fleet">Armada</a><a href="#keunggulan" onclick="return nav('keunggulan')" data-i18n="nav.why">Keunggulan</a><a href="#reservasi" onclick="return nav('reservasi')" data-i18n="ft.book">Reservasi</a>
+      <a href="#tentang" onclick="return nav('tentang')" data-i18n="ft.about">Tentang Kami</a><a href="#layanan" onclick="return nav('layanan')" data-i18n="nav.services">Layanan</a><a href="#tour" onclick="return nav('tour')" data-i18n="nav.tourFull">Tour &amp; Travel</a><a href="#armada" onclick="return nav('armada')" data-i18n="nav.fleet">Armada</a><a href="#keunggulan" onclick="return nav('keunggulan')" data-i18n="nav.why">Keunggulan</a><a href="#reservasi" onclick="return nav('reservasi')" data-i18n="ft.book">Reservasi</a>
     </div>
     <div>
       <h4 data-i18n="nav.contact">Kontak</h4>

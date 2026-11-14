@@ -6,16 +6,16 @@ var LANG = 'id';
 /* ================= TEKS (ID / EN) =================
    EN ditulis ulang per kalimat agar alami, bukan terjemahan kata per kata. */
 var EN = {
-  'nav.home':'Home','nav.about':'About','nav.services':'Services','nav.fleet':'Fleet','nav.why':'Why Us','nav.contact':'Contact',
+  'nav.home':'Home','nav.tour':'Tours','nav.tourFull':'Tours &amp; Travel','nav.about':'About','nav.services':'Services','nav.fleet':'Fleet','nav.why':'Why Us','nav.contact':'Contact',
   'nav.book':'Book Now','nav.bookOnline':'Book Online',
-  'hero.desc':'Luxury car rental and city tours, delivered with the care and precision of an airline cabin crew. For VIP guests, executives, business travel, and city sightseeing.',
+  'hero.desc':'Luxury car rental and city tours, delivered with the care and precision of airline cabin service. For VIP guests, executives, business travel, and city sightseeing.',
   'hero.cta':'Book Now','hero.fleet':'View Our Fleet',
   'hero.t1':'Uniformed chauffeurs','hero.t2':'Sanitized cabins','hero.t3':'24/7 support',
   'hero.badge':'Your time<br>is an asset.','hero.badgeSub':'We protect every minute of your journey.',
   'q.svc':'Service','q.car':'Vehicle','q.date':'Date','q.time':'Pickup time','q.dur':'Duration','q.btn':'Check &amp; Book',
   'about.kick':'01 · About Us',
   'about.h2':'A luxury fleet with <span class="hl">airline-grade service</span>',
-  'about.p1':'Cabin Trans is a luxury car rental and city tour company that pairs a meticulously maintained fleet with the service standards of an aircraft cabin. Founded by a former flight attendant, we bring the discipline, attention to detail, and courtesy of aviation to every journey on the ground, for <b>VIP guests, executives, and city tours</b>.',
+  'about.p1':'Cabin Trans is a luxury car rental and city tour company that pairs a meticulously maintained fleet with the service standards of an aircraft cabin. Drawing on years of experience in hospitality and transport, we bring the discipline, attention to detail, and courtesy of airline cabin service to every journey on the ground, for <b>VIP guests, executives, and city tours</b>.',
   'about.p2':'Your time is an asset. That is why we deliver precise, punctual service at a price that stays competitive.',
   'about.f1':'Late-model luxury vehicles, meticulously maintained and spotless.',
   'about.f2':'Calm, safe travel that respects your privacy and your time.',
@@ -23,11 +23,13 @@ var EN = {
   'svc.kick':'02 · Our Services',
   'svc.h2':'Three services, <span class="hl">one uncompromising standard</span>',
   'svc.p':'From VIP airport pickups and private city tours to dedicated vehicles for senior executives, every journey carries the discipline and courtesy of an airline cabin.',
-  'fleet.kick':'03 · Our Fleet',
+  'tour.h2':'Curated trips, <span class="hl">on our own fleet</span>',
+  'tour.p':'From golf days and deep-sea fishing to corporate outings and study tours, every package runs on Cabin Trans vehicles and chauffeurs, with pickup from the airport, the Whoosh station, or your hotel.',
+  'fleet.kick':'04 · Our Fleet',
   'fleet.h2':'Arrive in style, <span class="hl">travel in comfort</span>',
   'fleet.p':'Five well-kept, late-model vehicles. Choose the one that suits your group and your trip, then book it online in minutes.',
   'fleet.note':'Daily rates cover the vehicle only and exclude the chauffeur. Final pricing is confirmed by our team based on your schedule and route.',
-  'pil.kick':'04 · Why Cabin Trans',
+  'pil.kick':'05 · Why Cabin Trans',
   'pil.h2':'Five pillars of <span class="hl">the Cabin Trans standard</span>',
   'pil.p':'A comfortable vehicle is only the starting point. What sets us apart is operational discipline, rigorous safety standards, and world-class hospitality.',
   'pil.a':'Airline-Grade Standards',
@@ -44,7 +46,7 @@ var EN = {
   'pil.d2':'Transparent booking, trip tracking, and secure digital payment.',
   'pil.e1':'Round-the-clock support for last-minute requests and itinerary changes.',
   'pil.e2':'Ongoing quality reviews at the end of every trip.',
-  'flow.kick':'05 · How It Works',
+  'flow.kick':'06 · How It Works',
   'flow.h2':'Five <span class="hl">simple steps</span>',
   'flow.p':'From first enquiry to final receipt, every stage is clear and well coordinated. All you need to tell us is when and where.',
   'flow.s1':'Consultation','flow.s1p':'Reach us on WhatsApp or book online. Let us know your dates, destination, and number of guests.',
@@ -85,7 +87,7 @@ var EN = {
 var T = {
   id:{
     all:'Semua', anyCar:'Semua armada', seats:'org', pass:'penumpang', day:'hari', days:'hari', from:'Mulai dari', perDay:'/ hari', book:'Pesan',
-    cap:'Kapasitas', ciri:'Ciri', fit:'Cocok untuk', bookSvc:'Pesan layanan ini',
+    cap:'Kapasitas', ciri:'Ciri', fit:'Cocok untuk', bookSvc:'Pesan layanan ini', incl:'Termasuk', sig:'Paket Unggulan', ask:'Tanya paket ini', waTour:'Halo Cabin Trans, saya tertarik dengan paket {p}. Boleh minta info lebih lanjut?',
     tPick:'Pilih dulu satu armada.', tDates:'Lengkapi tanggal jemput dan selesai.', tOrder:'Tanggal selesai harus setelah tanggal jemput.', tName:'Lengkapi nama dan nomor WhatsApp yang valid.', copied:'Disalin', copiedBtn:'Tersalin',
     dur:'Durasi', sSvc:'Layanan', sUse:'Penggunaan', withDrv:'Dengan chauffeur', selfDrv:'Lepas kunci', sStart:'Jemput', sEnd:'Selesai', sLoc:'Titik jemput', sBy:'Pemesan', sPax:'Jumlah tamu', sNote:'Catatan', sUnit:'Unit', sDrv:'Chauffeur', total:'Total estimasi',
     waHi:'Halo Cabin Trans, saya mau konfirmasi reservasi:', waCode:'Kode', waCar:'Armada', waName:'Nama', waGeneral:'Halo Cabin Trans, saya mau konsultasi perjalanan.',
@@ -94,7 +96,7 @@ var T = {
   },
   en:{
     all:'All', anyCar:'Any vehicle', seats:'seats', pass:'passengers', day:'day', days:'days', from:'From', perDay:'/ day', book:'Book',
-    cap:'Capacity', ciri:'Highlights', fit:'Ideal for', bookSvc:'Book this service',
+    cap:'Capacity', ciri:'Highlights', fit:'Ideal for', bookSvc:'Book this service', incl:'Included', sig:'Signature Trip', ask:'Ask about this trip', waTour:'Hello Cabin Trans, I am interested in the {p} package. Could you share more details?',
     tPick:'Please choose a vehicle first.', tDates:'Please fill in both the pickup and end dates.', tOrder:'The end date must be after the pickup date.', tName:'Please enter your name and a valid WhatsApp number.', copied:'Copied', copiedBtn:'Copied',
     dur:'Duration', sSvc:'Service', sUse:'Usage', withDrv:'With chauffeur', selfDrv:'Self-drive', sStart:'Pickup', sEnd:'Ends', sLoc:'Pickup point', sBy:'Booked by', sPax:'Guests', sNote:'Notes', sUnit:'Vehicle', sDrv:'Chauffeur', total:'Estimated total',
     waHi:'Hello Cabin Trans, I would like to confirm my booking:', waCode:'Code', waCar:'Vehicle', waName:'Name', waGeneral:'Hello Cabin Trans, I would like some help planning a trip.',
@@ -134,7 +136,52 @@ var SERVICES = [
    scope:{id:['Armada dedicated','Pengemudi terikat NDA','Unit cadangan siaga','Penagihan bulanan transparan'],en:['Dedicated fleet','NDA-bound drivers','Standby backup vehicle','Transparent monthly billing']},
    benefit:{id:'Dukungan siaga dan laporan perjalanan (trip log). Biaya terukur dan transparan.',en:'On-call support and detailed trip logs, with costs that stay predictable and transparent.'}}
 ];
-var SVC_OPTS = SERVICES.map(function(s){return {id:s.id,label:{id:s.title,en:s.title}};}).concat([{id:'daily',label:{id:'Sewa Harian',en:'Daily Rental'}}]);
+var IC = {
+  golf:'<path d="M12 18V3l7 3.5-7 3.5"/><path d="M8 18.5c-2.4.4-4 1.2-4 2 0 1.4 3.6 2.5 8 2.5s8-1.1 8-2.5c0-.8-1.6-1.6-4-2"/>',
+  fish:'<path d="M6.5 12c3-5 9-6.5 13.5 0-4.5 6.5-10.5 5-13.5 0Z"/><path d="M6.5 12 2 8.5v7Z"/><circle cx="16" cy="11" r=".8" fill="currentColor"/>',
+  group:'<path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.9M16 3.1a4 4 0 0 1 0 7.8"/>',
+  family:'<path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1Z"/>',
+  brief:'<rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 13h18"/>',
+  grad:'<path d="m2 9 10-5 10 5-10 5Z"/><path d="M6 11v5c0 1.7 2.7 3 6 3s6-1.3 6-3v-5M22 9v6"/>',
+  mic:'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 9h6M7 12h10"/>'
+};
+var TOURS = [
+  {id:'golf', feat:true, name:'Golf Trip', ic:'golf',
+   lead:{id:'Tee time beres, tamu tinggal main.',en:'Your tee time is sorted. All you do is play.'},
+   desc:{id:'Trip sehari ke lapangan golf pilihan di Bandung Raya, Jatinangor, Bogor dan Sentul, hingga Jakarta. Kami atur jadwal main, transportasi, dan makan, sehingga Anda bisa fokus di lapangan.',
+         en:'A day out at selected courses across Greater Bandung, Jatinangor, Bogor and Sentul, and Jakarta. We arrange your tee time, transport, and meals so you can focus on your game.'},
+   incl:{id:['Mobil dan chauffeur pulang-pergi','Green fee dan caddie','Makan selama trip','Untuk satu flight (4 golfer)'],en:['Return transport with chauffeur','Green fee and caddie','Meals during the trip','Sized for one flight of four golfers']},
+   note:{id:'Belum termasuk tiket pesawat.',en:'Flights are not included.'}},
+  {id:'fishing', feat:true, name:'Fishing Trip', ic:'fish',
+   lead:{id:'Mancing laut tanpa repot logistik.',en:'Deep-sea fishing, minus the logistics.'},
+   desc:{id:'Berangkat ke spot mancing favorit di Pelabuhan Ratu, Ujung Genteng, atau Kepulauan Seribu. Kapal, kapten, dan umpan sudah kami siapkan, Anda cukup datang dan melempar kail.',
+         en:'Head out to favourite fishing grounds at Pelabuhan Ratu, Ujung Genteng, or the Thousand Islands. The boat, captain, and bait are ready and waiting, so all you need to do is show up and cast.'},
+   incl:{id:['Mobil dan chauffeur pulang-pergi','Kapal dan kapten berpengalaman','Umpan dan makan','Untuk grup hingga 6 orang'],en:['Return transport with chauffeur','Boat with an experienced captain','Bait and meals','For groups of up to six']},
+   note:{id:'Jadwal menyesuaikan prakiraan cuaca laut.',en:'Departures follow the marine weather forecast.'}},
+  {id:'opentrip', name:'Open Trip', ic:'group',
+   desc:{id:'Bergabung dengan rombongan kecil ke destinasi wisata populer di Jawa Barat dengan jadwal keberangkatan tetap. Cara praktis berlibur tanpa harus mengumpulkan grup sendiri.',
+         en:'Join a small group on a fixed-date trip to some of West Java\'s best-loved destinations. An easy way to travel without having to organise a group yourself.'},
+   fit:{id:'Solo traveler, pasangan, dan rombongan kecil',en:'Solo travellers, couples, and small groups'}},
+  {id:'private', name:'Private & Family Trip', ic:'family',
+   desc:{id:'Perjalanan pribadi dengan itinerary yang disusun khusus untuk keluarga atau grup Anda. Waktu, rute, dan tempat makan mengikuti keinginan Anda, didampingi chauffeur yang paham rute.',
+         en:'A private journey with an itinerary built around your family or group. You set the pace, the route, and the dining stops, with a chauffeur who knows the way.'},
+   fit:{id:'Keluarga dan grup pribadi, termasuk tamu dari Malaysia dan Singapura',en:'Families and private groups, including guests from Malaysia and Singapore'}},
+  {id:'outing', name:'Corporate Outing', ic:'brief',
+   desc:{id:'Outing, gathering, dan team building kantor yang kami urus dari transportasi, venue, sampai rundown acara. Setiap program disusun dalam proposal sesuai jumlah peserta dan tujuan acara.',
+         en:'Office outings, gatherings, and team-building days handled end to end, from transport and venue to the event rundown. Every programme is tailored in a proposal to your headcount and goals.'},
+   fit:{id:'Perusahaan dan instansi',en:'Companies and institutions'}},
+  {id:'study', name:'Study Tour', ic:'grad',
+   desc:{id:'Kunjungan edukatif ke kampus, industri, museum, dan destinasi budaya, dengan armada yang aman dan pendamping selama perjalanan. Jadwal disesuaikan dengan kalender akademik.',
+         en:'Educational visits to campuses, industries, museums, and cultural sites, with safe vehicles and an escort throughout. Scheduling works around your academic calendar.'},
+   fit:{id:'Sekolah, kampus, dan lembaga pendidikan',en:'Schools, universities, and educational institutions'}},
+  {id:'mice', name:'MICE', ic:'mic',
+   desc:{id:'Dukungan transportasi dan perjalanan untuk meeting, insentif, konferensi, dan pameran. Antar-jemput peserta terjadwal, beberapa armada berjalan paralel, dan koordinasi real-time dengan panitia.',
+         en:'Transport and travel support for meetings, incentives, conferences, and exhibitions, with scheduled delegate shuttles, multiple vehicles running in parallel, and real-time coordination with organisers.'},
+   fit:{id:'Penyelenggara acara dan korporat',en:'Event organisers and corporates'}}
+];
+var SVC_OPTS = SERVICES.map(function(s){return {id:s.id,label:{id:s.title,en:s.title}};})
+  .concat(TOURS.map(function(x){return {id:x.id,label:{id:x.name,en:x.name}};}))
+  .concat([{id:'daily',label:{id:'Sewa Harian',en:'Daily Rental'}}]);
 var DURS = [1,2,3,5,7];
 
 var I = {
@@ -164,6 +211,26 @@ function renderServices(){
       '</div></article>';
   }).join('');
 }
+
+function svg(p){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+p+'</svg>';}
+function renderTours(){
+  $('tourFeat').innerHTML = TOURS.filter(function(x){return x.feat;}).map(function(x){
+    return '<article class="tf">'+
+      '<div class="tf-top"><span class="tf-ic">'+svg(IC[x.ic])+'</span><span class="tf-tag">'+t('sig')+'</span></div>'+
+      '<h3>'+x.name+'</h3><p class="tf-lead">'+L(x.lead)+'</p><p class="tf-desc">'+L(x.desc)+'</p>'+
+      '<span class="tf-lab">'+t('incl')+'</span><ul class="tf-incl">'+L(x.incl).map(function(i){return '<li>'+I.check+i+'</li>';}).join('')+'</ul>'+
+      '<div class="tf-foot"><span class="tf-note">'+L(x.note)+'</span><button class="btn btn-light btn-sm" onclick="tourWA(\''+x.id+'\')">'+t('ask')+I.arrow+'</button></div>'+
+    '</article>';
+  }).join('');
+  $('tourGrid').innerHTML = TOURS.filter(function(x){return !x.feat;}).map(function(x){
+    return '<article class="tc">'+
+      '<span class="tc-ic">'+svg(IC[x.ic])+'</span><h3>'+x.name+'</h3><p class="tc-desc">'+L(x.desc)+'</p>'+
+      '<div class="tc-fit"><span>'+t('fit')+'</span>'+L(x.fit)+'</div>'+
+      '<button class="btn btn-out btn-sm" onclick="tourWA(\''+x.id+'\')">'+t('ask')+I.arrow+'</button>'+
+    '</article>';
+  }).join('');
+}
+function tourWA(id){var x=TOURS.filter(function(k){return k.id===id;})[0];if(!x)return false;window.open('https://wa.me/'+ADMIN_WA+'?text='+encodeURIComponent(t('waTour').replace('{p}',x.name)),'_blank','noopener');return false;}
 
 var curFilter = 'Semua';
 function carCard(c){
@@ -219,7 +286,7 @@ function setLang(l, silent){
   var md=document.querySelector('meta[name=description]'); if(md) md.setAttribute('content',t('desc'));
   document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed', b.getAttribute('data-lang')===LANG);});
   applyStatic();
-  renderServices(); renderFilters(); renderCars(); fillSelects(); renderChoose();
+  renderServices(); renderTours(); renderFilters(); renderCars(); fillSelects(); renderChoose();
   if(step===2) updateDurNote();
   if(step===5) renderSummary();
   if(booking.name) $('sucName').textContent = booking.name;
@@ -227,7 +294,7 @@ function setLang(l, silent){
 }
 
 /* ================= NAVIGASI ================= */
-var SECTIONS = ['beranda','tentang','layanan','armada','keunggulan','alur','kontak'];
+var SECTIONS = ['beranda','tentang','layanan','tour','armada','keunggulan','alur','kontak'];
 function showView(v){document.querySelectorAll('.view').forEach(function(el){el.classList.toggle('active', el.id==='view-'+v);});}
 function nav(target){
   closeMenu();
