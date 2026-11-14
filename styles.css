@@ -402,3 +402,12 @@ footer{background:var(--alt);border-top:1px solid var(--line);color:var(--tx-dim
   .sb .tx{display:none;white-space:nowrap}
   .sb.cur .tx{display:block}
 }
+
+@media (min-width:480px) and (max-width:640px){
+  .cars>.car{flex-basis:calc((100% - 24px)/2)}
+  .tc{flex-basis:calc((100% - 20px)/2)}
+  .pil{flex-basis:calc((100% - 16px)/2)}
+  .car-name{font-size:21px}
+  .spec div{flex-direction:column;gap:2px}
+  .spec dd{text-align:left}
+}
