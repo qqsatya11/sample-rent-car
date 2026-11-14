@@ -146,13 +146,13 @@ var IC = {
   mic:'<rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4M7 9h6M7 12h10"/>'
 };
 var TOURS = [
-  {id:'golf', feat:true, name:'Golf Trip', ic:'golf',
+  {id:'golf', feat:true, name:'Golf Trip', ic:'golf', img:'assets/tour-golf.jpg',
    lead:{id:'Tee time beres, tamu tinggal main.',en:'Your tee time is sorted. All you do is play.'},
    desc:{id:'Trip sehari ke lapangan golf pilihan di Bandung Raya, Jatinangor, Bogor dan Sentul, hingga Jakarta. Kami atur jadwal main, transportasi, dan makan, sehingga Anda bisa fokus di lapangan.',
          en:'A day out at selected courses across Greater Bandung, Jatinangor, Bogor and Sentul, and Jakarta. We arrange your tee time, transport, and meals so you can focus on your game.'},
    incl:{id:['Mobil dan chauffeur pulang-pergi','Green fee dan caddie','Makan selama trip','Untuk satu flight (4 golfer)'],en:['Return transport with chauffeur','Green fee and caddie','Meals during the trip','Sized for one flight of four golfers']},
    note:{id:'Belum termasuk tiket pesawat.',en:'Flights are not included.'}},
-  {id:'fishing', feat:true, name:'Fishing Trip', ic:'fish',
+  {id:'fishing', feat:true, name:'Fishing Trip', ic:'fish', img:'assets/tour-fishing.jpg',
    lead:{id:'Mancing laut tanpa repot logistik.',en:'Deep-sea fishing, minus the logistics.'},
    desc:{id:'Berangkat ke spot mancing favorit di Pelabuhan Ratu, Ujung Genteng, atau Kepulauan Seribu. Kapal, kapten, dan umpan sudah kami siapkan, Anda cukup datang dan melempar kail.',
          en:'Head out to favourite fishing grounds at Pelabuhan Ratu, Ujung Genteng, or the Thousand Islands. The boat, captain, and bait are ready and waiting, so all you need to do is show up and cast.'},
@@ -216,10 +216,10 @@ function svg(p){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColo
 function renderTours(){
   $('tourFeat').innerHTML = TOURS.filter(function(x){return x.feat;}).map(function(x){
     return '<article class="tf">'+
-      '<div class="tf-top"><span class="tf-ic">'+svg(IC[x.ic])+'</span><span class="tf-tag">'+t('sig')+'</span></div>'+
-      '<h3>'+x.name+'</h3><p class="tf-lead">'+L(x.lead)+'</p><p class="tf-desc">'+L(x.desc)+'</p>'+
+      '<div class="tf-img"><img src="'+x.img+'" alt="'+x.name+' Cabin Trans" loading="lazy" width="1600" height="1000"><span class="tf-tag">'+t('sig')+'</span></div>'+
+      '<div class="tf-body"><div class="tf-top"><span class="tf-ic">'+svg(IC[x.ic])+'</span><h3>'+x.name+'</h3></div><p class="tf-lead">'+L(x.lead)+'</p><p class="tf-desc">'+L(x.desc)+'</p>'+
       '<span class="tf-lab">'+t('incl')+'</span><ul class="tf-incl">'+L(x.incl).map(function(i){return '<li>'+I.check+i+'</li>';}).join('')+'</ul>'+
-      '<div class="tf-foot"><span class="tf-note">'+L(x.note)+'</span><button class="btn btn-light btn-sm" onclick="tourWA(\''+x.id+'\')">'+t('ask')+I.arrow+'</button></div>'+
+      '<div class="tf-foot"><span class="tf-note">'+L(x.note)+'</span><button class="btn btn-light btn-sm" onclick="tourWA(\''+x.id+'\')">'+t('ask')+I.arrow+'</button></div></div>'+
     '</article>';
   }).join('');
   $('tourGrid').innerHTML = TOURS.filter(function(x){return !x.feat;}).map(function(x){
