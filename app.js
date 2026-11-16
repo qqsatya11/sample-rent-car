@@ -8,21 +8,21 @@ var LANG = 'id';
 var EN = {
   'nav.home':'Home','nav.tour':'Tours','nav.tourFull':'Tours &amp; Travel','nav.about':'About','nav.services':'Services','nav.fleet':'Fleet','nav.why':'Why Us','nav.contact':'Contact',
   'nav.book':'Book Now','nav.bookOnline':'Book Online',
-  'hero.desc':'Luxury car rental and city tours, delivered with the care and precision of airline cabin service. For VIP guests, executives, business travel, and city sightseeing.',
+  'hero.desc':'Luxury car rental and city tours, delivered with precise, professional, premium service. For VIP guests, executives, business travel, and city sightseeing.',
   'hero.cta':'Book Now','hero.fleet':'View Our Fleet',
   'hero.t1':'Uniformed chauffeurs','hero.t2':'Sanitized cabins','hero.t3':'24/7 support',
   'hero.badge':'Your time<br>is an asset.','hero.badgeSub':'We protect every minute of your journey.',
   'q.svc':'Service','q.car':'Vehicle','q.date':'Date','q.time':'Pickup time','q.dur':'Duration','q.btn':'Check &amp; Book',
   'about.kick':'01 · About Us',
-  'about.h2':'A luxury fleet with <span class="hl">airline-grade service</span>',
-  'about.p1':'Cabin Trans is a luxury car rental and city tour company that pairs a meticulously maintained fleet with the service standards of an aircraft cabin. Drawing on years of experience in hospitality and transport, we bring the discipline, attention to detail, and courtesy of airline cabin service to every journey on the ground, for <b>VIP guests, executives, and city tours</b>.',
+  'about.h2':'A luxury fleet with <span class="hl">first-class service</span>',
+  'about.p1':'Cabin Trans is a luxury car rental and city tour company that pairs a meticulously maintained fleet with premium service standards. Drawing on years of experience in hospitality and transport, we bring a level of discipline, attention to detail, and courtesy modelled on aviation service standards to every journey, for <b>VIP guests, executives, and city tours</b>.',
   'about.p2':'Your time is an asset. That is why we deliver precise, punctual service at a price that stays competitive.',
   'about.f1':'Late-model luxury vehicles, meticulously maintained and spotless.',
   'about.f2':'Calm, safe travel that respects your privacy and your time.',
   'about.f3':'Elegant city tours for VIP guests, executives, and official visits.',
   'svc.kick':'02 · Our Services',
   'svc.h2':'Three services, <span class="hl">one uncompromising standard</span>',
-  'svc.p':'From VIP airport pickups and private city tours to dedicated vehicles for senior executives, every journey carries the discipline and courtesy of an airline cabin.',
+  'svc.p':'From VIP airport pickups and private city tours to dedicated vehicles for senior executives, every journey is handled with the same discipline and courtesy.',
   'tour.h2':'Curated trips, <span class="hl">on our own fleet</span>',
   'tour.p':'From golf days and deep-sea fishing to corporate outings and study tours, every package runs on Cabin Trans vehicles and chauffeurs, with pickup from the airport, the Whoosh station, or your hotel.',
   'fleet.kick':'04 · Our Fleet',
@@ -32,7 +32,7 @@ var EN = {
   'pil.kick':'05 · Why Cabin Trans',
   'pil.h2':'Five pillars of <span class="hl">the Cabin Trans standard</span>',
   'pil.p':'A comfortable vehicle is only the starting point. What sets us apart is operational discipline, rigorous safety standards, and world-class hospitality.',
-  'pil.a':'Airline-Grade Standards',
+  'pil.a':'Premium Service Standards',
   'pil.a1':'Trained drivers who are disciplined, punctual, and versed in emergency procedures and travel risk management.',
   'pil.a2':'Sanitized cabins, with deep cleaning before and after every trip.',
   'pil.b':'Professional Chauffeurs',
@@ -79,7 +79,7 @@ var EN = {
   'ok.h':'Booking received','ok.thanks':'Thank you,','ok.code':'Your booking code is:',
   'ok.p':'Your confirmation message is ready. If WhatsApp did not open automatically, use the button below.',
   'ok.open':'Open WhatsApp','ok.new':'Make another booking',
-  'ft.p':'Luxury Fleet, Airline-Grade Service. Luxury car rental and city tours in Bandung, delivered to airline cabin standards.',
+  'ft.p':'Luxury Fleet, Exceptional Service. Luxury car rental and city tours in Bandung, delivered to premium, professional standards.',
   'ft.about':'About Us','ft.book':'Book Online','ft.note':'Prices shown are indicative and confirmed by our team.'
 };
 
@@ -91,8 +91,8 @@ var T = {
     tPick:'Pilih dulu satu armada.', tDates:'Lengkapi tanggal jemput dan selesai.', tOrder:'Tanggal selesai harus setelah tanggal jemput.', tName:'Lengkapi nama dan nomor WhatsApp yang valid.', copied:'Disalin', copiedBtn:'Tersalin',
     dur:'Durasi', sSvc:'Layanan', sUse:'Penggunaan', withDrv:'Dengan chauffeur', selfDrv:'Lepas kunci', sStart:'Jemput', sEnd:'Selesai', sLoc:'Titik jemput', sBy:'Pemesan', sPax:'Jumlah tamu', sNote:'Catatan', sUnit:'Unit', sDrv:'Chauffeur', total:'Total estimasi',
     waHi:'Halo Cabin Trans, saya mau konfirmasi reservasi:', waCode:'Kode', waCar:'Armada', waName:'Nama', waGeneral:'Halo Cabin Trans, saya mau konsultasi perjalanan.',
-    locale:'id-ID', title:'Cabin Trans · Luxury Fleet, Airline-Grade Service',
-    desc:'Cabin Trans (PT. Cakra Bintang Transindo): rental mobil mewah dan city tour Bandung dengan standar pelayanan kabin penerbangan. Alphard, Innova Zenix, Hiace Premio.'
+    locale:'id-ID', title:'Cabin Trans · Luxury Fleet, Exceptional Service',
+    desc:'Cabin Trans (PT. Cakra Bintang Transindo): rental mobil mewah dan city tour Bandung dengan pelayanan premium dan profesional. Alphard, Innova Zenix, Hiace Premio.'
   },
   en:{
     all:'All', anyCar:'Any vehicle', seats:'seats', pass:'passengers', day:'day', days:'days', from:'From', perDay:'/ day', book:'Book',
@@ -100,8 +100,8 @@ var T = {
     tPick:'Please choose a vehicle first.', tDates:'Please fill in both the pickup and end dates.', tOrder:'The end date must be after the pickup date.', tName:'Please enter your name and a valid WhatsApp number.', copied:'Copied', copiedBtn:'Copied',
     dur:'Duration', sSvc:'Service', sUse:'Usage', withDrv:'With chauffeur', selfDrv:'Self-drive', sStart:'Pickup', sEnd:'Ends', sLoc:'Pickup point', sBy:'Booked by', sPax:'Guests', sNote:'Notes', sUnit:'Vehicle', sDrv:'Chauffeur', total:'Estimated total',
     waHi:'Hello Cabin Trans, I would like to confirm my booking:', waCode:'Code', waCar:'Vehicle', waName:'Name', waGeneral:'Hello Cabin Trans, I would like some help planning a trip.',
-    locale:'en-GB', title:'Cabin Trans · Luxury Fleet, Airline-Grade Service',
-    desc:'Cabin Trans (PT. Cakra Bintang Transindo): luxury car rental and city tours in Bandung with airline cabin service standards. Alphard, Innova Zenix, Hiace Premio.'
+    locale:'en-GB', title:'Cabin Trans · Luxury Fleet, Exceptional Service',
+    desc:'Cabin Trans (PT. Cakra Bintang Transindo): luxury car rental and city tours in Bandung with premium, professional service. Alphard, Innova Zenix, Hiace Premio.'
   }
 };
 function t(k){return T[LANG][k];}
