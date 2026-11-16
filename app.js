@@ -28,7 +28,7 @@ var EN = {
   'fleet.kick':'04 · Our Fleet',
   'fleet.h2':'Arrive in style, <span class="hl">travel in comfort</span>',
   'fleet.p':'Five well-kept, late-model vehicles. Choose the one that suits your group and your trip, then book it online in minutes.',
-  'fleet.note':'Daily rates cover the vehicle only and exclude the chauffeur. Final pricing is confirmed by our team based on your schedule and route.',
+  'fleet.note':'Rates cover the vehicle only and exclude the chauffeur. Final pricing is confirmed by our team based on your schedule and route.',
   'pil.kick':'05 · Why Cabin Trans',
   'pil.h2':'Five pillars of <span class="hl">the Cabin Trans standard</span>',
   'pil.p':'A comfortable vehicle is only the starting point. What sets us apart is operational discipline, rigorous safety standards, and world-class hospitality.',
@@ -109,15 +109,15 @@ function L(o){return (o && typeof o==='object') ? (o[LANG]||o.id) : o;}
 
 /* ================= DATA ================= */
 var CARS = [
-  {id:'alphard', name:'Toyota Alphard', cat:'Premium', seat:'7', price:2500000, img:'assets/alphard.webp',
+  {id:'alphard', name:'Toyota Alphard', cat:'Premium', seat:'7', price:3500000, img:'assets/alphard.webp',
    kelas:{id:'Kelas Eksekutif',en:'Executive Class'}, ciri:{id:'Captain seat, kabin senyap',en:'Captain seats, whisper-quiet cabin'}, cocok:{id:'Tamu VIP, direksi',en:'VIP guests, senior executives'}},
-  {id:'zenix', name:'Toyota Innova Zenix', cat:'MPV', seat:'7', price:600000, img:'assets/zenix.webp',
+  {id:'zenix', name:'Toyota Innova Zenix', cat:'MPV', seat:'7', price:1000000, img:'assets/zenix.webp',
    kelas:{id:'Premium Keluarga',en:'Premium Family'}, ciri:{id:'Modern dan irit',en:'Modern and fuel-efficient'}, cocok:{id:'Keluarga, wisata kota',en:'Families, city tours'}},
-  {id:'premio', name:'Toyota Hiace Premio', cat:'Van', seat:'14-15', price:1200000, img:'assets/premio.webp',
+  {id:'premio', name:'Toyota Hiace Premio Luxury', cat:'Van', seat:'14-15', price:1300000, img:'assets/premio.webp',
    kelas:{id:'Eksekutif & Grup',en:'Executive & Group'}, ciri:{id:'Van premium, kabin luas dan tenang',en:'Premium van with a spacious, quiet cabin'}, cocok:{id:'Rombongan, korporat, tur',en:'Groups, corporate travel, tours'}},
-  {id:'innova', name:'Toyota Innova Reborn', cat:'MPV', seat:'7', price:500000, img:'assets/innova.webp',
+  {id:'innova', name:'Toyota Innova Reborn', cat:'MPV', seat:'7', price:950000, img:'assets/innova.webp',
    kelas:{id:'Keluarga & Dinas',en:'Family & Business'}, ciri:{id:'Tangguh dan lega',en:'Rugged and roomy'}, cocok:{id:'Keluarga, dinas, luar kota',en:'Families, business trips, out-of-town travel'}},
-  {id:'hiace', name:'Toyota Hiace', cat:'Van', seat:'14', price:1000000, img:'assets/hiace.webp',
+  {id:'hiace', name:'Toyota Hiace Commuter', cat:'Van', seat:'14', price:1200000, img:'assets/hiace.webp',
    kelas:{id:'Rombongan',en:'Group Travel'}, ciri:{id:'Kabin luas, bagasi lega',en:'Spacious cabin, ample luggage room'}, cocok:{id:'Rombongan, wisata',en:'Groups, sightseeing'}}
 ];
 var CATS = ['Semua','Premium','MPV','Van'];
@@ -243,7 +243,7 @@ function carCard(c){
         '<div><dt>'+t('ciri')+'</dt><dd>'+L(c.ciri)+'</dd></div>'+
         '<div><dt>'+t('fit')+'</dt><dd>'+L(c.cocok)+'</dd></div>'+
       '</dl>'+
-      '<div class="car-foot"><div class="car-price"><span>'+t('from')+'</span><b class="tnum">'+rupiah(c.price)+'</b><span>'+t('perDay')+'</span></div>'+
+      '<div class="car-foot"><div class="car-price"><span>'+t('from')+'</span><b class="tnum">'+rupiah(c.price)+'</b></div>'+
       '<button class="btn btn-primary btn-sm" onclick="bookCar(\''+c.id+'\')">'+t('book')+'</button></div>'+
     '</div></article>';
 }
@@ -357,7 +357,7 @@ function bookService(id){booking.svc=id;$('bSvc').value=id;nav('reservasi');goSt
 function renderChoose(){
   $('chooseCars').innerHTML = CARS.map(function(c){
     return '<div class="pk'+(booking.car===c.id?' sel':'')+'" onclick="pickCar(\''+c.id+'\')" role="button" tabindex="0"><div class="ph"><img src="'+c.img+'" alt="'+c.name+'"></div>'+
-      '<div><div class="nm">'+c.name+'</div><div class="mt">'+L(c.kelas)+' · '+c.seat+' '+t('pass')+'</div><div class="pr">'+rupiah(c.price)+' '+t('perDay')+'</div></div></div>';
+      '<div><div class="nm">'+c.name+'</div><div class="mt">'+L(c.kelas)+' · '+c.seat+' '+t('pass')+'</div><div class="pr">'+rupiah(c.price)+'</div></div></div>';
   }).join('');
 }
 function pickCar(id){booking.car=id;renderChoose();}
@@ -398,7 +398,7 @@ function line(k,v){return '<div class="sline"><span class="k">'+k+'</span><span 
 function esc(s){return String(s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
 function renderSummary(){
   var r=calcTotal();if(!r)return;var c=r.car;
-  var h='<div class="scar"><div class="ph"><img src="'+c.img+'" alt="'+c.name+'"></div><div><div class="sn2">'+c.name+'</div><div class="sm2">'+L(c.kelas)+' · '+rupiah(c.price)+' '+t('perDay')+'</div></div></div>';
+  var h='<div class="scar"><div class="ph"><img src="'+c.img+'" alt="'+c.name+'"></div><div><div class="sn2">'+c.name+'</div><div class="sm2">'+L(c.kelas)+' · '+rupiah(c.price)+'</div></div></div>';
   h+=line(t('sSvc'),esc(svcLabel(booking.svc)))+line(t('sUse'),booking.driver==='driver'?t('withDrv'):t('selfDrv'))+line(t('sStart'),fmt(booking.start))+line(t('sEnd'),fmt(booking.end))+line(t('sLoc'),esc(locText()))+line(t('dur'),nDays(r.days))+line(t('sBy'),esc(booking.name)+' · '+esc(booking.phone))+line(t('sPax'),esc(paxText()));
   if(booking.note)h+=line(t('sNote'),esc(booking.note));
   h+='<div class="sgap"></div>'+line(t('sUnit')+' ('+nDays(r.days)+')',rupiah(r.sub));
