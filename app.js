@@ -79,12 +79,12 @@ var EN = {
   'ok.h':'Booking received','ok.thanks':'Thank you,','ok.code':'Your booking code is:',
   'ok.p':'Your confirmation message is ready. If WhatsApp did not open automatically, use the button below.',
   'ok.open':'Open WhatsApp','ok.new':'Make another booking',
-  'ft.p':'Luxury Fleet, Exceptional Service. Premium car rental and golf tours in Bandung, delivered to premium, professional standards.',
+  'ft.p':'Luxury Fleet, Exceptional Service. Golf tours and premium car rental in Bandung, delivered to premium, professional standards.',
   'ft.explore':'Explore','ft.courses':'Golf Courses',
   'nav.rental':'Car Rental','nav.tourGolf':'Tours &amp; Golf','nav.aboutUs':'About Us','nav.bookGolf':'Book Golf',
   'promo.kick':'Tours &amp; Golf','promo.h2':'Play golf in the Bandung highlands, <span class="hl">we will do the driving</span>',
   'promo.p':'Golf packages and tee times at selected courses, complete with premium Cabin Trans transport from the airport, the station, or your hotel.','promo.btn':'Explore Tours &amp; Golf',
-  'lp.eyebrow':'Cabin Trans · Bandung','lp.sub':'Premium chauffeured car rental and golf tours in Bandung, delivered with precise, professional service.',
+  'lp.eyebrow':'Cabin Trans · Bandung','lp.sub':'Golf tours and premium chauffeured car rental in Bandung, delivered with precise, professional service.',
   'lp.ctaRental':'Car Rental','lp.ctaTour':'Tours &amp; Golf',
   'lp.p1kick':'Premium Car Rental','lp.p1h':'A premium fleet, professional chauffeurs','lp.p1p':'Alphard, Innova Zenix, and Hiace Premio Luxury for airport transfers, city tours, and business travel.','lp.explore':'Explore',
   'lp.p2kick':'Tours &amp; Golf','lp.p2h':'Golf in the Bandung highlands','lp.p2p':'Golf packages and tee times at selected courses, with premium door-to-door transport.',
@@ -483,8 +483,8 @@ function fillSelects(){
 /* ================= BAHASA ================= */
 var PAGE = document.body.getAttribute('data-page') || 'rental';
 var PAGE_META = {
-  landing:{id:['Cabin Trans · Luxury Fleet, Exceptional Service','Cabin Trans (PT. Cakra Bintang Transindo): rental mobil premium dengan chauffeur dan tour golf di Bandung. Alphard, Innova Zenix, Hiace Premio Luxury.'],
-           en:['Cabin Trans · Luxury Fleet, Exceptional Service','Cabin Trans (PT. Cakra Bintang Transindo): premium chauffeured car rental and golf tours in Bandung. Alphard, Innova Zenix, Hiace Premio Luxury.']},
+  landing:{id:['Cabin Trans · Luxury Fleet, Exceptional Service','Cabin Trans (PT. Cakra Bintang Transindo): tour golf di lapangan pilihan Bandung dan rental mobil premium dengan chauffeur. Alphard, Innova Zenix, Hiace Premio Luxury.'],
+           en:['Cabin Trans · Luxury Fleet, Exceptional Service','Cabin Trans (PT. Cakra Bintang Transindo): golf tours at selected Bandung courses and premium chauffeured car rental. Alphard, Innova Zenix, Hiace Premio Luxury.']},
   rental:{id:['Rental Mobil Premium · Cabin Trans','Rental mobil premium dengan chauffeur di Bandung: Alphard, Innova Zenix, Hiace Premio Luxury. Airport transfer, city tour, dan mobilitas korporat. Reservasi online.'],
           en:['Premium Car Rental · Cabin Trans','Premium chauffeured car rental in Bandung: Alphard, Innova Zenix, Hiace Premio Luxury. Airport transfers, city tours, and corporate mobility. Book online.']},
   tour:{id:['Tour & Golf Bandung · Cabin Trans','Paket golf dan tiket flight di lapangan pilihan Bandung dan Jakarta, lengkap dengan transport premium Cabin Trans.'],
