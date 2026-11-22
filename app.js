@@ -131,7 +131,7 @@ var EN = {
   'fq.q3':'Can you pick us up from the airport or the Whoosh station?','fq.a3':'Yes. Pickups from Soekarno-Hatta, Kertajati, or the Whoosh station are included in golf packages and available as an add-on for tee time bookings.',
   'fq.q4':'What if it rains or our plans change?','fq.a4':'Rescheduling follows each course\'s own policy. We will share the details when we confirm your booking.',
   'fq.q5':'Do you welcome international guests?','fq.a5':'Yes. We host guests from Malaysia, Singapore, and beyond, with communication in English.',
-  'nav.golf':'Golf','nav.tour2':'Tours','nav.seeTours':'View Packages',
+  'nav.contactUs':'Contact Us','nav.golf':'Golf','nav.tour2':'Tours','nav.seeTours':'View Packages',
   'to.note2':'Looking for golf packages?','to.noteLink2':'Visit the Golf page',
   'tv.eyebrow':'Tours &amp; Travel · Bandung','tv.h1':'Explore West Java, <em>effortlessly</em>','tv.lead':'The route is planned and the vehicle is ready. You just enjoy the journey.',
   'tv.desc':'Trips for families, companies, schools, and communities, all run on Cabin Trans vehicles and chauffeurs, with pickup from the airport, the Whoosh station, or your hotel.',

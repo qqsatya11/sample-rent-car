@@ -421,16 +421,9 @@ nav.links a.current::after{content:"";position:absolute;left:0;right:0;bottom:-2
 .ilink{color:var(--brand-2);font-weight:600;text-decoration:underline;text-underline-offset:3px}
 section[id]{scroll-margin-top:86px}
 
-/* ---------- landing header (transparan di atas hero) ---------- */
-body[data-page="landing"] header.nav{position:fixed;left:0;right:0;top:0;transition:background .3s,border-color .3s,backdrop-filter .3s}
-body[data-page="landing"] header.nav:not(.scrolled){background:transparent;border-color:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
-body[data-page="landing"] header.nav:not(.scrolled) nav.links a{color:rgba(255,255,255,.82)}
-body[data-page="landing"] header.nav:not(.scrolled) nav.links a:hover{color:#fff}
-body[data-page="landing"] header.nav:not(.scrolled) .icon-btn{color:#fff;border-color:rgba(255,255,255,.35)}
-body[data-page="landing"] header.nav:not(.scrolled) .lang{background:rgba(255,255,255,.08);border-color:rgba(255,255,255,.3)}
-body[data-page="landing"] header.nav:not(.scrolled) .lang button{color:rgba(255,255,255,.8)}
-body[data-page="landing"] header.nav:not(.scrolled) .lang button[aria-pressed="true"]{background:#fff;color:var(--navy)}
-body[data-page="landing"] header.nav:not(.scrolled) .nav-cta{background:#fff;color:var(--navy);box-shadow:none}
+/* ---------- landing header: kaca putih di atas hero ---------- */
+body[data-page="landing"] header.nav{position:fixed;left:0;right:0;top:0;background:rgba(255,255,255,.88);backdrop-filter:blur(14px) saturate(140%);-webkit-backdrop-filter:blur(14px) saturate(140%);border-color:rgba(255,255,255,.5)}
+body[data-page="landing"] header.nav.scrolled{background:rgba(255,255,255,.96)}
 
 /* ---------- landing hero ---------- */
 .lp-hero{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--navy)}
@@ -634,12 +627,10 @@ body[data-page="landing"] header.nav:not(.scrolled) .nav-cta{background:#fff;col
    ===================================================================== */
 body.lp-min{background:#060c20}
 body.lp-min .topbar{display:none}
-.lp-foot{background:#060c20;color:rgba(255,255,255,.6);border-top:1px solid rgba(255,255,255,.08)}
 .lp-foot-in{display:flex;align-items:center;justify-content:space-between;gap:16px 32px;flex-wrap:wrap;padding-block:22px;font-size:13px}
 .lp-foot-l{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
 .lp-foot-l .lg{height:22px;width:auto}
 .lp-foot-r{display:flex;gap:22px;flex-wrap:wrap}
-.lp-foot a:hover{color:#fff}
 
 /* ---- A: satu layar sinematik ---- */
 .lpa{position:relative;min-height:100vh;min-height:100svh;display:flex;align-items:flex-end;color:#fff;overflow:hidden;background:var(--navy)}
@@ -702,13 +693,13 @@ body.lp-min .topbar{display:none}
   .lpa::after{background:linear-gradient(0deg,rgba(6,12,32,.96) 0%,rgba(6,12,32,.7) 38%,rgba(6,12,32,.15) 62%,rgba(6,12,32,.5) 100%)}
 }
 
-/* logo: selalu warna asli; di latar gelap pakai badge putih (sesuai company profile) */
+/* logo selalu warna asli: header & footer tetap terang, juga di mode gelap */
 .lg-on-dark{display:none!important}
-.logo-badge,
-:root[data-theme="dark"] .logo,
-body[data-page="landing"] header.nav:not(.scrolled) .logo{background:#fff;border-radius:10px;padding:7px 14px;box-shadow:0 6px 18px -10px rgba(0,0,0,.45)}
-.lp-foot .logo-badge{display:inline-flex;padding:6px 12px;border-radius:8px}
-.lp-foot .logo-badge .lg{height:20px}
-@media (max-width:640px){
-  :root[data-theme="dark"] .logo,body[data-page="landing"] header.nav:not(.scrolled) .logo{padding:6px 10px;border-radius:8px}
-}
+:root[data-theme="dark"] header.nav,:root[data-theme="dark"] footer,.lp-foot{--bg:#ffffff;--alt:#f4f6fb;--card:#ffffff;--tx:#121a33;--tx-dim:#5d6680;--line:#e2e7f1;--field:#f2f5fa;--brand:#003dc5;--brand-2:#0033a6;--brand-soft:#e8eefc;color:var(--tx)}
+:root[data-theme="dark"] header.nav{background:#fff;backdrop-filter:none;-webkit-backdrop-filter:none}
+:root[data-theme="dark"] .topbar{background:#f4f6fb;color:#5d6680;border-color:#e2e7f1}
+:root[data-theme="dark"] .topbar .tb-r a{color:#0033a6}
+.lp-foot{background:#fff;color:#5d6680;border-top:1px solid #e2e7f1}
+.lp-foot a:hover{color:#0033a6}
+.lp-foot-l .lg{height:22px}
+.nav-cta svg{width:17px;height:17px}
