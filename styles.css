@@ -711,3 +711,5 @@ body.lp-min .topbar{display:none}
 .lp-foot a:hover{color:#0033a6}
 .lp-foot-l .lg{height:22px}
 .nav-cta svg{width:17px;height:17px}
+body[data-page="landing"] header.nav:not(.scrolled) .logo{background:#fff;border-radius:999px;padding:8px 20px;box-shadow:0 6px 18px -10px rgba(0,0,0,.45)}
+@media (max-width:640px){body[data-page="landing"] header.nav:not(.scrolled) .logo{padding:6px 14px;border-radius:999px}}
