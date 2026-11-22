@@ -299,7 +299,7 @@ var COURSES = [
    desc:{id:'Dirancang Peter Thomson dan Ross Perrett, lapangan perbukitan ini mengutamakan akurasi dibanding jarak. Sebagian besar par 4 berbentuk dogleg, dengan latar pegunungan di sekelilingnya.',
          en:'Designed by Peter Thomson and Ross Perrett, this hillside course rewards accuracy over distance. Most of the par 4s are doglegs, set against the surrounding mountains.'},
    hl:{id:['Desain Peter Thomson','Tantangan risk and reward','Driving range'],en:['Peter Thomson design','Risk-and-reward layout','Driving range']}},
-  {id:'poltak', name:'Poltak Golf', short:'PL', nophoto:true, region:'utara', holes:null, par:null, year:null,
+  {id:'poltak', name:'Poltak Golf', short:'PL', region:'utara', holes:null, par:null, year:null,
    area:{id:'Lembang, Bandung Barat',en:'Lembang, West Bandung'},
    dist:{id:'Kawasan dataran tinggi Lembang',en:'In the Lembang highlands'},
    desc:{id:'Lapangan di dataran tinggi Lembang dengan udara sejuk dan suasana hijau khas Bandung utara. Pilihan yang tenang untuk sesi golf santai, dekat dengan destinasi wisata Lembang.',
