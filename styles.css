@@ -713,3 +713,35 @@ body.lp-min .topbar{display:none}
 .nav-cta svg{width:17px;height:17px}
 body[data-page="landing"] header.nav:not(.scrolled) .logo{background:#fff;border-radius:999px;padding:8px 20px;box-shadow:0 6px 18px -10px rgba(0,0,0,.45)}
 @media (max-width:640px){body[data-page="landing"] header.nav:not(.scrolled) .logo{padding:6px 14px;border-radius:999px}}
+/* landing: slideshow lambat golf / tour / rental */
+.lp-slides{position:absolute;inset:0;overflow:hidden}
+.lp-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.8s ease}
+.lp-slide.is-on{opacity:1}
+.lp-slide .lp-bg{animation:none;transform:scale(1.04);will-change:transform}
+.lp-slide.is-on .lp-bg,.lp-slide.leaving .lp-bg{animation:lpkb 10s ease-out both}
+.lp-slide:nth-child(2).is-on .lp-bg,.lp-slide:nth-child(2).leaving .lp-bg{animation-name:lpkb2}
+@keyframes lpkb{from{transform:scale(1.04) translate3d(0,0,0)}to{transform:scale(1.13) translate3d(-1.6%,-1%,0)}}
+@keyframes lpkb2{from{transform:scale(1.04) translate3d(0,0,0)}to{transform:scale(1.13) translate3d(1.6%,-1%,0)}}
+.lp-bg-tour{object-position:50% center}
+.lp-bg-rent{object-position:78% center}
+.lpa-door::before{transition:transform .4s ease}
+.lpa-door.lpa-main:not(.on)::before{transform:scaleX(0)}
+.lpa-door.lpa-main:not(.on) .lpa-go{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
+.lpa-door.on::before{transform:scaleX(1);transition:transform var(--lp-dur,7s) linear}
+.lpa-doors.paused .lpa-door.on::before,.lpa-door:hover::before{transform:scaleX(1);transition-duration:.4s}
+.lpa-door.on .lpa-go,.lpa-door:hover .lpa-go{background:#fff;color:var(--navy);border-color:#fff}
+.lpa-doors.paused .lpa-door:not(.on):not(:hover)::before{transform:scaleX(0)}
+@media (max-aspect-ratio:4/5){
+  .lpa .lp-bg-tour,.lpa .lp-bg-rent{inset:0 0 auto 0;top:0;height:66%;-webkit-mask-image:linear-gradient(#000 72%,transparent);mask-image:linear-gradient(#000 72%,transparent)}
+  .lpa .lp-bg-tour{object-position:56% center}
+  .lpa .lp-bg-rent{object-position:52% center}
+}
+@media (prefers-reduced-motion:reduce){.lp-slide .lp-bg{animation:none!important;transform:none}.lp-slide{transition:opacity .01s}}
+/* landing: heading berganti mengikuti slide */
+.lp-rot{display:grid}
+.lp-rot>.lp-ri{grid-area:1/1;opacity:0;transform:translateY(18px);transition:opacity .9s ease,transform 1.1s cubic-bezier(.2,.7,.2,1);pointer-events:none}
+.lp-rot>.lp-ri.is-on{opacity:1;transform:none;transition-delay:.35s;pointer-events:auto}
+span.lp-eyebrow.lp-rot{display:grid;width:max-content}
+@media (prefers-reduced-motion:reduce){.lp-rot>.lp-ri{transition:none;transform:none}}
+.lp-sub{margin-top:clamp(14px,2vh,22px);max-width:560px;font-size:clamp(15px,1.25vw,18px);line-height:1.6;color:rgba(255,255,255,.82)}
+@media (max-width:640px){.lp-sub{font-size:14.5px;max-width:none}}

@@ -6,6 +6,7 @@ var LANG = 'id';
 /* ================= TEKS (ID / EN) =================
    EN ditulis ulang per kalimat agar alami, bukan terjemahan kata per kata. */
 var EN = {
+  'lps.e1':'01 · Golf','lps.e2':'02 · Tours','lps.e3':'03 · Car Rental','lps.h1':'From Your Door<br>to the Tee','lps.h2':'Your Journey,<br>Our Fleet','lps.h3':'Every Detail<br>Attended To','lps.p1':'Tee time, green fee, caddie, and premium transport in a single booking.','lps.p2':'Private trips, corporate outings, and MICE, planned around you with our own fleet and chauffeurs.','lps.p3':'From Alphard to Hiace Premio Luxury, with professional chauffeurs who are punctual and experienced.',
   'nav.home':'Home','nav.tour':'Tours','nav.tourFull':'Tours &amp; Travel','nav.about':'About','nav.services':'Services','nav.fleet':'Fleet','nav.why':'Why Us','nav.contact':'Contact',
   'nav.book':'Book Now','nav.bookOnline':'Book Online',
   'hero.desc':'Luxury car rental and city tours, delivered with precise, professional, premium service. For VIP guests, executives, business travel, and city sightseeing.',
@@ -691,3 +692,27 @@ watchSections();
 (function(){var hd=$('siteHeader'); if(!hd||PAGE!=='landing') return;
   var f=function(){hd.classList.toggle('scrolled', window.scrollY>40 || $('mobileMenu').classList.contains('open'));};
   window.addEventListener('scroll',f,{passive:true}); document.addEventListener('click',function(){setTimeout(f,0);}); f();})();
+/* landing: slideshow lambat, sinkron dengan pintu Golf / Tour / Rental */
+(function(){if(PAGE!=='landing')return;var box=$('lpSlides');if(!box)return;
+  var sl=box.querySelectorAll('.lp-slide'),doors=document.querySelectorAll('.lpa-door'),nav_=document.querySelector('.lpa-doors');
+  var DUR=7000,cur=0,t=null,paused=false,
+      still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if(nav_)nav_.style.setProperty('--lp-dur',DUR+'ms');
+  function show(i){if(i===cur)return;var old=sl[cur];
+    old.classList.remove('is-on');old.classList.add('leaving');setTimeout(function(){old.classList.remove('leaving');},1900);
+    sl[i].classList.add('is-on');
+    for(var k=0;k<doors.length;k++)doors[k].classList.toggle('on',k===i);
+    document.querySelectorAll('.lp-rot').forEach(function(r){var it=r.querySelectorAll('.lp-ri');
+      for(var k=0;k<it.length;k++){it[k].classList.toggle('is-on',k===i);if(r.tagName==='H1'){if(k===i)it[k].removeAttribute('aria-hidden');else it[k].setAttribute('aria-hidden','true');}}});
+    cur=i;}
+  function restartBar(){var d=doors[cur];if(!d)return;d.classList.remove('on');void d.offsetWidth;d.classList.add('on');}
+  function tick(){clearTimeout(t);if(still||paused||document.hidden)return;
+    t=setTimeout(function(){show((cur+1)%sl.length);tick();},DUR);}
+  for(var k=0;k<doors.length;k++)(function(i){var d=doors[i];
+    d.addEventListener('mouseenter',function(){paused=true;nav_.classList.add('paused');clearTimeout(t);show(i);});
+    d.addEventListener('focus',function(){paused=true;nav_.classList.add('paused');clearTimeout(t);show(i);});
+  })(k);
+  if(nav_){nav_.addEventListener('mouseleave',function(){paused=false;nav_.classList.remove('paused');restartBar();tick();});}
+  document.addEventListener('visibilitychange',function(){if(!document.hidden){restartBar();tick();}else clearTimeout(t);});
+  if(still&&nav_)nav_.classList.add('paused');
+  tick();})();

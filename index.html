@@ -55,12 +55,17 @@
 
 <main>
   <section class="lpa" id="beranda">
-    <picture><source media="(max-aspect-ratio: 4/5)" srcset="assets/hero-golf-mobile.jpg"><img class="lp-bg" src="assets/tour-golf.jpg" alt="" width="1600" height="1000" fetchpriority="high"></picture>
+    <div class="lp-slides" id="lpSlides" aria-hidden="true">
+      <picture class="lp-slide is-on"><source media="(max-aspect-ratio: 4/5)" srcset="assets/hero-golf-mobile.jpg"><img class="lp-bg" src="assets/tour-golf.jpg" alt="" width="1600" height="1000" fetchpriority="high"></picture>
+      <picture class="lp-slide"><img class="lp-bg lp-bg-tour" src="assets/svc-citytour.jpg" alt="" width="1446" height="1087" decoding="async"></picture>
+      <picture class="lp-slide"><img class="lp-bg lp-bg-rent" src="assets/hero-sopir.jpg" alt="" width="1800" height="1013" decoding="async"></picture>
+    </div>
     <div class="wrap lpa-in">
-      <span class="lp-eyebrow" data-i18n="lp.eyebrow">Cabin Trans · Bandung</span>
-      <h1 class="lp-h1" data-i18n="lpm.h1">Arrive<br>Exceptionally</h1>
+      <span class="lp-eyebrow lp-rot"><span class="lp-ri is-on" data-i18n="lps.e1">01 · Golf</span><span class="lp-ri" data-i18n="lps.e2">02 · Tour</span><span class="lp-ri" data-i18n="lps.e3">03 · Rental Mobil</span></span>
+      <h1 class="lp-h1 lp-rot"><span class="lp-ri is-on" data-i18n="lps.h1">From Your Door<br>to the Tee</span><span class="lp-ri" data-i18n="lps.h2" aria-hidden="true">Your Journey,<br>Our Fleet</span><span class="lp-ri" data-i18n="lps.h3" aria-hidden="true">Every Detail<br>Attended To</span></h1>
+      <p class="lp-sub lp-rot"><span class="lp-ri is-on" data-i18n="lps.p1">Tee time, green fee, caddie, dan transport premium dalam satu pemesanan.</span><span class="lp-ri" data-i18n="lps.p2">Private trip, corporate outing, hingga MICE, disusun sesuai kebutuhan dengan armada dan chauffeur kami sendiri.</span><span class="lp-ri" data-i18n="lps.p3">Alphard hingga Hiace Premio Luxury, dengan chauffeur profesional yang tepat waktu dan berpengalaman.</span></p>
       <nav class="lpa-doors" aria-label="Layanan">
-        <a href="golf.html" class="lpa-door lpa-main"><span class="lpa-n">01</span><b data-i18n="nav.golf">Golf</b><span class="lpa-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+        <a href="golf.html" class="lpa-door lpa-main on"><span class="lpa-n">01</span><b data-i18n="nav.golf">Golf</b><span class="lpa-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
         <a href="tour.html" class="lpa-door"><span class="lpa-n">02</span><b data-i18n="nav.tour2">Tour</b><span class="lpa-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
         <a href="rental.html" class="lpa-door"><span class="lpa-n">03</span><b data-i18n="nav.rental">Rental Mobil</b><span class="lpa-go"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
       </nav>
