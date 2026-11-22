@@ -360,7 +360,6 @@ function renderCourses(){
         '<h3>'+c.name+'</h3>'+
         '<p class="crs-area">'+PIN+'<span>'+L(c.area)+' · '+L(c.dist)+'</span></p>'+
         crStats(c)+
-        '<p class="crs-desc">'+L(c.desc)+'</p>'+
         '<ul class="crs-hl">'+L(c.hl).map(function(h){return '<li>'+h+'</li>';}).join('')+'</ul>'+
         '<div class="crs-foot"><button class="btn btn-primary btn-sm" onclick="golfPick(\''+c.id+'\')">'+t('bookTee')+'</button><button class="btn btn-out btn-sm" onclick="golfAsk(\''+c.id+'\')">'+t('askBtn')+'</button></div>'+
       '</div></article>';
