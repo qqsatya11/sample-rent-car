@@ -715,10 +715,10 @@ body[data-page="landing"] header.nav:not(.scrolled) .logo{background:#fff;border
 @media (max-width:640px){body[data-page="landing"] header.nav:not(.scrolled) .logo{padding:6px 14px;border-radius:999px}}
 /* landing: slideshow lambat golf / tour / rental */
 .lp-slides{position:absolute;inset:0;overflow:hidden}
-.lp-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.8s ease}
+.lp-slide{position:absolute;inset:0;opacity:0;transition:opacity 1.4s ease}
 .lp-slide.is-on{opacity:1}
 .lp-slide .lp-bg{animation:none;transform:scale(1.04);will-change:transform}
-.lp-slide.is-on .lp-bg,.lp-slide.leaving .lp-bg{animation:lpkb 10s ease-out both}
+.lp-slide.is-on .lp-bg,.lp-slide.leaving .lp-bg{animation:lpkb 7s ease-out both}
 .lp-slide:nth-child(2).is-on .lp-bg,.lp-slide:nth-child(2).leaving .lp-bg{animation-name:lpkb2}
 @keyframes lpkb{from{transform:scale(1.04) translate3d(0,0,0)}to{transform:scale(1.13) translate3d(-1.6%,-1%,0)}}
 @keyframes lpkb2{from{transform:scale(1.04) translate3d(0,0,0)}to{transform:scale(1.13) translate3d(1.6%,-1%,0)}}
@@ -727,7 +727,7 @@ body[data-page="landing"] header.nav:not(.scrolled) .logo{background:#fff;border
 .lpa-door::before{transition:transform .4s ease}
 .lpa-door.lpa-main:not(.on)::before{transform:scaleX(0)}
 .lpa-door.lpa-main:not(.on) .lpa-go{background:transparent;color:#fff;border-color:rgba(255,255,255,.4)}
-.lpa-door.on::before{transform:scaleX(1);transition:transform var(--lp-dur,7s) linear}
+.lpa-door.on::before{transform:scaleX(1);transition:transform var(--lp-dur,4.5s) linear}
 .lpa-doors.paused .lpa-door.on::before,.lpa-door:hover::before{transform:scaleX(1);transition-duration:.4s}
 .lpa-door.on .lpa-go,.lpa-door:hover .lpa-go{background:#fff;color:var(--navy);border-color:#fff}
 .lpa-doors.paused .lpa-door:not(.on):not(:hover)::before{transform:scaleX(0)}

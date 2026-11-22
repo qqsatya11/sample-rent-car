@@ -695,11 +695,11 @@ watchSections();
 /* landing: slideshow lambat, sinkron dengan pintu Golf / Tour / Rental */
 (function(){if(PAGE!=='landing')return;var box=$('lpSlides');if(!box)return;
   var sl=box.querySelectorAll('.lp-slide'),doors=document.querySelectorAll('.lpa-door'),nav_=document.querySelector('.lpa-doors');
-  var DUR=7000,cur=0,t=null,paused=false,
+  var DUR=4500,cur=0,t=null,paused=false,
       still=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   if(nav_)nav_.style.setProperty('--lp-dur',DUR+'ms');
   function show(i){if(i===cur)return;var old=sl[cur];
-    old.classList.remove('is-on');old.classList.add('leaving');setTimeout(function(){old.classList.remove('leaving');},1900);
+    old.classList.remove('is-on');old.classList.add('leaving');setTimeout(function(){old.classList.remove('leaving');},1500);
     sl[i].classList.add('is-on');
     for(var k=0;k<doors.length;k++)doors[k].classList.toggle('on',k===i);
     document.querySelectorAll('.lp-rot').forEach(function(r){var it=r.querySelectorAll('.lp-ri');
