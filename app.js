@@ -25,11 +25,11 @@ var EN = {
   'svc.p':'From VIP airport pickups and private city tours to dedicated vehicles for senior executives, every journey is handled with the same discipline and courtesy.',
   'tour.h2':'Curated trips, <span class="hl">on our own fleet</span>',
   'tour.p':'From golf days and deep-sea fishing to corporate outings and study tours, every package runs on Cabin Trans vehicles and chauffeurs, with pickup from the airport, the Whoosh station, or your hotel.',
-  'fleet.kick':'04 · Our Fleet',
+  'fleet.kick':'03 · Our Fleet',
   'fleet.h2':'Arrive in style, <span class="hl">travel in comfort</span>',
   'fleet.p':'Five well-kept, late-model vehicles. Choose the one that suits your group and your trip, then book it online in minutes.',
   'fleet.note':'Rates cover the vehicle only and exclude the chauffeur. Final pricing is confirmed by our team based on your schedule and route.',
-  'pil.kick':'05 · Why Cabin Trans',
+  'pil.kick':'04 · Why Cabin Trans',
   'pil.h2':'Five pillars of <span class="hl">the Cabin Trans standard</span>',
   'pil.p':'A comfortable vehicle is only the starting point. What sets us apart is operational discipline, rigorous safety standards, and world-class hospitality.',
   'pil.a':'Premium Service Standards',
@@ -46,7 +46,7 @@ var EN = {
   'pil.d2':'Transparent booking, trip tracking, and secure digital payment.',
   'pil.e1':'Round-the-clock support for last-minute requests and itinerary changes.',
   'pil.e2':'Ongoing quality reviews at the end of every trip.',
-  'flow.kick':'06 · How It Works',
+  'flow.kick':'05 · How It Works',
   'flow.h2':'Five <span class="hl">simple steps</span>',
   'flow.p':'From first enquiry to final receipt, every stage is clear and well coordinated. All you need to tell us is when and where.',
   'flow.s1':'Consultation','flow.s1p':'Reach us on WhatsApp or book online. Let us know your dates, destination, and number of guests.',
@@ -79,7 +79,58 @@ var EN = {
   'ok.h':'Booking received','ok.thanks':'Thank you,','ok.code':'Your booking code is:',
   'ok.p':'Your confirmation message is ready. If WhatsApp did not open automatically, use the button below.',
   'ok.open':'Open WhatsApp','ok.new':'Make another booking',
-  'ft.p':'Luxury Fleet, Exceptional Service. Luxury car rental and city tours in Bandung, delivered to premium, professional standards.',
+  'ft.p':'Luxury Fleet, Exceptional Service. Premium car rental and golf tours in Bandung, delivered to premium, professional standards.',
+  'ft.explore':'Explore','ft.courses':'Golf Courses',
+  'nav.rental':'Car Rental','nav.tourGolf':'Tours &amp; Golf','nav.aboutUs':'About Us','nav.bookGolf':'Book Golf',
+  'promo.kick':'Tours &amp; Golf','promo.h2':'Play golf in the Bandung highlands, <span class="hl">we will do the driving</span>',
+  'promo.p':'Golf packages and tee times at selected courses, complete with premium Cabin Trans transport from the airport, the station, or your hotel.','promo.btn':'Explore Tours &amp; Golf',
+  'lp.eyebrow':'Cabin Trans · Bandung','lp.sub':'Premium chauffeured car rental and golf tours in Bandung, delivered with precise, professional service.',
+  'lp.ctaRental':'Car Rental','lp.ctaTour':'Tours &amp; Golf',
+  'lp.p1kick':'Premium Car Rental','lp.p1h':'A premium fleet, professional chauffeurs','lp.p1p':'Alphard, Innova Zenix, and Hiace Premio Luxury for airport transfers, city tours, and business travel.','lp.explore':'Explore',
+  'lp.p2kick':'Tours &amp; Golf','lp.p2h':'Golf in the Bandung highlands','lp.p2p':'Golf packages and tee times at selected courses, with premium door-to-door transport.',
+  'lp.stKick':'About Cabin Trans','lp.stH':'Every journey, <span class="hl">handled to the highest standard</span>',
+  'lp.stP':'Drawing on years of experience in hospitality and transport, we bring discipline, attention to detail, and courtesy modelled on aviation service standards. For VIP guests, executives, families, and golfers.',
+  'lp.f1b':'Professional chauffeurs','lp.f1s':'Well-groomed, courteous, and expert on every route','lp.f2b':'Well-kept fleet','lp.f2s':'Clean, late-model, and checked before every trip','lp.f3b':'Always on time','lp.f3s':'Real-time coordination with a standby vehicle',
+  'lp.gKick':'Partner Courses','lp.gH':'Selected courses, <span class="hl">tee times sorted</span>','lp.gBtn':'See all courses',
+  'lp.fKick':'Our Fleet','lp.fH':'Arrive in style, <span class="hl">travel in comfort</span>','lp.fBtn':'View fleet &amp; rates',
+  'tr.eyebrow':'Tours &amp; Golf · Bandung','tr.h1':'Golf in the <em>Bandung</em> highlands','tr.lead':'Your tee time is sorted. All you do is play.',
+  'tr.desc':'Book a golf package or just a tee time at selected courses in Bandung and Jakarta. Premium transport, green fees, and caddies, all arranged in a single booking.',
+  'tr.cta1':'Book a Tee Time','tr.cta2':'View Courses','tr.t1':'6 selected courses','tr.t2':'Premium transport','tr.t3':'Tee times or packages',
+  'tr.badge':'Golf<br>Experience','tr.badgeSub':'From pickup to the final hole.',
+  'gx.kick':'01 · Golf Experience','gx.h2':'Everything a golfer needs, <span class="hl">in one booking</span>',
+  'gx.p':'Bandung is surrounded by highland courses with cool air all year round. We connect you to the best of them, with a comfortable journey to match.',
+  'gx.a':'Selected tee times','gx.ap':'We secure playing slots at our partner courses in advance, so you never have to chase a booking.',
+  'gx.b':'Door-to-door transport','gx.bp':'An Alphard or Hiace Premio Luxury with plenty of room for golf bags, driven by an experienced chauffeur.',
+  'gx.c':'Green fees &amp; caddies arranged','gx.cp':'Golf packages cover green fees, caddies, and meals. Simply show up and play.',
+  'gx.d':'Airport &amp; Whoosh pickup','gx.dp':'For guests from Jakarta, Malaysia, and Singapore, we pick you up at Soekarno-Hatta, Kertajati, or the Whoosh station.',
+  'cr.kick':'02 · Partner Courses','cr.h2':'Selected courses in <span class="hl">Bandung &amp; Jakarta</span>',
+  'cr.p':'From a historic course dating back to 1917 to a championship layout on the lakeshore. Choose your course, then book a tee time or a full package.',
+  'pk.kick':'03 · Golf Packages','pk.h2':'Golf packages, <span class="hl">ready to go</span>',
+  'pk.p':'From a single day on the course to a golf holiday of several days. Every package can be tailored to your choice of course, group size, and schedule.',
+  'pk.note':'Prices depend on the course, day of play, and number of golfers. Our team sends a full quote via WhatsApp.',
+  'gb.kick':'04 · Tee Times &amp; Booking','gb.h2':'Just need a tee time? <span class="hl">Book a flight only</span>',
+  'gb.p':'A flight is one group of up to four golfers sharing a tee time. Choose your course, date, and session. Cabin Trans transport can be added if you need it.',
+  'gb.l1':'1 flight = up to 4 golfers','gb.l2':'Tee times at 6 selected courses','gb.l3':'Premium transport as an optional add-on','gb.l4':'Slot and price confirmed via WhatsApp',
+  'gb.tFlight':'Tee Time Only','gb.tPkg':'Golf Package','gb.pkg':'Package','gb.course':'Course','gb.date':'Date of play','gb.session':'Tee time session',
+  'gs.1':'Morning','gs.2':'Midday','gs.3':'Flexible','gb.golfers':'Number of golfers','gb.from':'Guests from','gf.other':'Other',
+  'gb.transport':'Add Cabin Trans transport','gb.car':'Vehicle','gb.namePh':'As shown on your ID','gb.notePh':'e.g. club rental needed, average handicap, hotel pickup',
+  'gb.submit':'Send via WhatsApp','gb.submitNote':'Our team will confirm slot availability and pricing on WhatsApp.',
+  'gb.okH':'Request sent','gb.okP':'Your booking details are ready in WhatsApp. If it did not open, use the button below.','gb.again':'Book again',
+  'to.kick':'05 · More Tours','to.h2':'Curated trips, <span class="hl">on our own fleet</span>',
+  'to.p':'Beyond golf, we put together trips for families, companies, and schools, all run on Cabin Trans vehicles and chauffeurs.',
+  'to.note':'Only need an airport transfer or a city tour?','to.noteLink':'See rental services',
+  'hw.kick':'06 · How to Book','hw.h2':'Four steps <span class="hl">to the tee box</span>',
+  'hw.p':'A clear booking process from the start. You always know your slot status and full costs before you pay.',
+  'hw.s1':'Choose a course','hw.s1p':'Pick your course, date, session, and group size via the form or WhatsApp.',
+  'hw.s2':'Slot confirmed','hw.s2p':'Our team checks tee time availability and sends you the price details.',
+  'hw.s3':'Lock it in','hw.s3p':'A down payment secures your slot, followed by written confirmation.',
+  'hw.s4':'Play golf','hw.s4p':'Your chauffeur arrives on time. You focus on your game, we handle the rest.',
+  'fq.kick':'FAQ','fq.h2':'Before you <span class="hl">tee off</span>','fq.p':'Can\'t find what you need? Ask our team directly on WhatsApp.',
+  'fq.q1':'What does one flight mean?','fq.a1':'A flight is one playing group of up to four golfers sharing a tee time. For larger groups, you can book several flights at once.',
+  'fq.q2':'What is the difference between a tee time and a golf package?','fq.a2':'A tee time booking only secures your slot on the course. A golf package also covers transport, green fees, caddies, and meals, plus a hotel on overnight packages.',
+  'fq.q3':'Can you pick us up from the airport or the Whoosh station?','fq.a3':'Yes. Pickups from Soekarno-Hatta, Kertajati, or the Whoosh station are included in golf packages and available as an add-on for tee time bookings.',
+  'fq.q4':'What if it rains or our plans change?','fq.a4':'Rescheduling follows each course\'s own policy. We will share the details when we confirm your booking.',
+  'fq.q5':'Do you welcome international guests?','fq.a5':'Yes. We host guests from Malaysia, Singapore, and beyond, with communication in English.',
   'ft.about':'About Us','ft.book':'Book Online','ft.note':'Prices shown are indicative and confirmed by our team.'
 };
 
@@ -91,6 +142,10 @@ var T = {
     tPick:'Pilih dulu satu armada.', tDates:'Lengkapi tanggal jemput dan selesai.', tOrder:'Tanggal selesai harus setelah tanggal jemput.', tName:'Lengkapi nama dan nomor WhatsApp yang valid.', copied:'Disalin', copiedBtn:'Tersalin',
     dur:'Durasi', sSvc:'Layanan', sUse:'Penggunaan', withDrv:'Dengan chauffeur', selfDrv:'Lepas kunci', sStart:'Jemput', sEnd:'Selesai', sLoc:'Titik jemput', sBy:'Pemesan', sPax:'Jumlah tamu', sNote:'Catatan', sUnit:'Unit', sDrv:'Chauffeur', total:'Total estimasi',
     waHi:'Halo Cabin Trans, saya mau konfirmasi reservasi:', waCode:'Kode', waCar:'Armada', waName:'Nama', waGeneral:'Halo Cabin Trans, saya mau konsultasi perjalanan.',
+    crAll:'Semua', holes:'hole', par:'par', since:'sejak', opened:'dibuka', bookTee:'Pesan Tee Time', askBtn:'Tanya', pkgSig:'Paling diminati', pkgBook:'Pesan paket', pkgAsk:'Tanya harga', anyCourse:'Belum tahu, minta rekomendasi', soon:'Segera hadir', viewCourse:'Lihat lapangan', fromP:'Mulai dari',
+    golfer:'golfer', golfers:'golfer', flight:'flight', flights:'flight', group:'rombongan', gNeed:'Lengkapi tanggal main, nama, dan nomor WhatsApp yang valid.',
+    waGolfHi:'Halo Cabin Trans, saya mau pesan golf:', gTFlight:'Tiket flight', gTPkg:'Paket golf', wType:'Jenis', wPkg:'Paket', wCourse:'Lapangan', wDate:'Tanggal main', wSession:'Sesi', wGolfers:'Jumlah golfer', wFrom:'Asal', wTransport:'Transport', wNo:'Tidak perlu', wNote:'Catatan',
+    waAskCourse:'Halo Cabin Trans, saya ingin tanya tee time di {c}.', waAskPkg:'Halo Cabin Trans, saya ingin tanya harga paket {p}.',
     locale:'id-ID', title:'Cabin Trans · Luxury Fleet, Exceptional Service',
     desc:'Cabin Trans (PT. Cakra Bintang Transindo): rental mobil mewah dan city tour Bandung dengan pelayanan premium dan profesional. Alphard, Innova Zenix, Hiace Premio.'
   },
@@ -100,11 +155,15 @@ var T = {
     tPick:'Please choose a vehicle first.', tDates:'Please fill in both the pickup and end dates.', tOrder:'The end date must be after the pickup date.', tName:'Please enter your name and a valid WhatsApp number.', copied:'Copied', copiedBtn:'Copied',
     dur:'Duration', sSvc:'Service', sUse:'Usage', withDrv:'With chauffeur', selfDrv:'Self-drive', sStart:'Pickup', sEnd:'Ends', sLoc:'Pickup point', sBy:'Booked by', sPax:'Guests', sNote:'Notes', sUnit:'Vehicle', sDrv:'Chauffeur', total:'Estimated total',
     waHi:'Hello Cabin Trans, I would like to confirm my booking:', waCode:'Code', waCar:'Vehicle', waName:'Name', waGeneral:'Hello Cabin Trans, I would like some help planning a trip.',
+    crAll:'All', holes:'holes', par:'par', since:'since', opened:'opened', bookTee:'Book Tee Time', askBtn:'Ask', pkgSig:'Most popular', pkgBook:'Book package', pkgAsk:'Ask for price', anyCourse:'Not sure yet, recommend one', soon:'Coming soon', viewCourse:'View course', fromP:'From',
+    golfer:'golfer', golfers:'golfers', flight:'flight', flights:'flights', group:'group', gNeed:'Please fill in the date of play, your name, and a valid WhatsApp number.',
+    waGolfHi:'Hello Cabin Trans, I would like to book golf:', gTFlight:'Tee time only', gTPkg:'Golf package', wType:'Type', wPkg:'Package', wCourse:'Course', wDate:'Date of play', wSession:'Session', wGolfers:'Golfers', wFrom:'From', wTransport:'Transport', wNo:'Not needed', wNote:'Notes',
+    waAskCourse:'Hello Cabin Trans, I would like to ask about tee times at {c}.', waAskPkg:'Hello Cabin Trans, I would like a price for the {p} package.',
     locale:'en-GB', title:'Cabin Trans · Luxury Fleet, Exceptional Service',
     desc:'Cabin Trans (PT. Cakra Bintang Transindo): luxury car rental and city tours in Bandung with premium, professional service. Alphard, Innova Zenix, Hiace Premio.'
   }
 };
-function t(k){return T[LANG][k];}
+function t(k){var v=T[LANG][k];return v===undefined?T.id[k]:v;}
 function L(o){return (o && typeof o==='object') ? (o[LANG]||o.id) : o;}
 
 /* ================= DATA ================= */
@@ -152,7 +211,7 @@ var TOURS = [
          en:'A day out at selected courses across Greater Bandung, Jatinangor, Bogor and Sentul, and Jakarta. We arrange your tee time, transport, and meals so you can focus on your game.'},
    incl:{id:['Mobil dan chauffeur pulang-pergi','Green fee dan caddie','Makan selama trip','Untuk satu flight (4 golfer)'],en:['Return transport with chauffeur','Green fee and caddie','Meals during the trip','Sized for one flight of four golfers']},
    note:{id:'Belum termasuk tiket pesawat.',en:'Flights are not included.'}},
-  {id:'fishing', feat:true, name:'Fishing Trip', ic:'fish', img:'assets/tour-fishing.jpg',
+  {id:'fishing', feat:true, soon:true, fit:{id:'Komunitas mancing dan grup hingga 6 orang',en:'Fishing communities and groups of up to six'}, name:'Fishing Trip', ic:'fish', img:'assets/tour-fishing.jpg',
    lead:{id:'Mancing laut tanpa repot logistik.',en:'Deep-sea fishing, minus the logistics.'},
    desc:{id:'Berangkat ke spot mancing favorit di Pelabuhan Ratu, Ujung Genteng, atau Kepulauan Seribu. Kapal, kapten, dan umpan sudah kami siapkan, Anda cukup datang dan melempar kail.',
          en:'Head out to favourite fishing grounds at Pelabuhan Ratu, Ujung Genteng, or the Thousand Islands. The boat, captain, and bait are ready and waiting, so all you need to do is show up and cast.'},
@@ -213,18 +272,174 @@ function renderServices(){
 }
 
 function svg(p){return '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+p+'</svg>';}
-function renderTours(){
-  $('tourFeat').innerHTML = TOURS.filter(function(x){return x.feat;}).map(function(x){
-    return '<article class="tf">'+
-      '<div class="tf-img"><img src="'+x.img+'" alt="'+x.name+' Cabin Trans" loading="lazy" width="1600" height="1000"><span class="tf-tag">'+t('sig')+'</span></div>'+
-      '<div class="tf-body"><div class="tf-top"><span class="tf-ic">'+svg(IC[x.ic])+'</span><h3>'+x.name+'</h3></div><p class="tf-lead">'+L(x.lead)+'</p><p class="tf-desc">'+L(x.desc)+'</p>'+
-      '<span class="tf-lab">'+t('incl')+'</span><ul class="tf-incl">'+L(x.incl).map(function(i){return '<li>'+I.check+i+'</li>';}).join('')+'</ul>'+
-      '<div class="tf-foot"><span class="tf-note">'+L(x.note)+'</span><button class="btn btn-light btn-sm" onclick="tourWA(\''+x.id+'\')">'+t('ask')+I.arrow+'</button></div></div>'+
+/* ================= GOLF ================= */
+var REGIONS = [
+  {id:'all', label:{id:'Semua',en:'All'}},
+  {id:'utara', label:{id:'Bandung Utara',en:'North Bandung'}},
+  {id:'barat', label:{id:'Bandung Barat',en:'West Bandung'}},
+  {id:'timur', label:{id:'Bandung Timur',en:'East Bandung'}},
+  {id:'jakarta', label:{id:'Jakarta',en:'Jakarta'}}
+];
+var COURSES = [
+  {id:'parahyangan', name:'Parahyangan Golf', short:'PG', region:'barat', holes:18, par:72, year:2018, yk:'opened',
+   area:{id:'Padalarang, Bandung Barat',en:'Padalarang, West Bandung'},
+   dist:{id:'± 40 menit dari pusat Bandung',en:'About 40 minutes from central Bandung'},
+   desc:{id:'Lapangan championship karya Bob Moore (JMP Golf Design) yang dibuka pada 2018. Membentang dari lembah hingga perbukitan di tepi Danau Saguling, dengan tujuh jembatan yang melintasi teluk danau.',
+         en:'A championship course by Bob Moore of JMP Golf Design, opened in 2018. It runs from valley to hillside along the shores of Lake Saguling, with seven bridges spanning the lake\'s bays.'},
+   hl:{id:['Panjang 7.298 yard','Pemandangan Danau Saguling','Clubhouse luas, restoran & spa'],en:['7,298 yards','Lake Saguling views','Spacious clubhouse, dining & spa']}},
+  {id:'dago-heritage', name:'Dago Heritage 1917', short:'DH', region:'utara', holes:18, par:70, year:1917, yk:'since',
+   area:{id:'Dago, Bandung Utara',en:'Dago, North Bandung'},
+   dist:{id:'± 20 menit dari pusat kota',en:'About 20 minutes from the city centre'},
+   desc:{id:'Lapangan bersejarah yang dimulai sebagai 9 hole pada 1917 dan diperluas menjadi 18 hole pada 1994. Bergaya parkland klasik di ketinggian sekitar 1.000 mdpl, dengan fairway sempit dan panorama kota Bandung dari hampir setiap hole.',
+         en:'A historic course that began with nine holes in 1917 and grew to eighteen in 1994. A classic parkland layout at around 1,000 metres above sea level, with narrow fairways and views over Bandung from almost every hole.'},
+   hl:{id:['Ketinggian 950–1.065 mdpl','Fairway sempit, menantang','Panorama kota Bandung'],en:['950–1,065 m above sea level','Narrow, demanding fairways','Views over Bandung']}},
+  {id:'mountain-view', name:'Mountain View Golf Club', short:'MV', region:'utara', holes:18, par:72, year:2001, yk:'opened',
+   area:{id:'Dago Pakar, Bandung Utara',en:'Dago Pakar, North Bandung'},
+   dist:{id:'± 20 menit dari pusat kota',en:'About 20 minutes from the city centre'},
+   desc:{id:'Dirancang Peter Thomson dan Ross Perrett, lapangan perbukitan ini mengutamakan akurasi dibanding jarak. Sebagian besar par 4 berbentuk dogleg, dengan latar pegunungan di sekelilingnya.',
+         en:'Designed by Peter Thomson and Ross Perrett, this hillside course rewards accuracy over distance. Most of the par 4s are doglegs, set against the surrounding mountains.'},
+   hl:{id:['Desain Peter Thomson','Tantangan risk and reward','Driving range'],en:['Peter Thomson design','Risk-and-reward layout','Driving range']}},
+  {id:'poltak', name:'Poltak Golf', short:'PL', nophoto:true, region:'utara', holes:null, par:null, year:null,
+   area:{id:'Lembang, Bandung Barat',en:'Lembang, West Bandung'},
+   dist:{id:'Kawasan dataran tinggi Lembang',en:'In the Lembang highlands'},
+   desc:{id:'Lapangan di dataran tinggi Lembang dengan udara sejuk dan suasana hijau khas Bandung utara. Pilihan yang tenang untuk sesi golf santai, dekat dengan destinasi wisata Lembang.',
+         en:'A course in the cool Lembang highlands, wrapped in the greenery of north Bandung. A quiet choice for a relaxed round, close to Lembang\'s popular attractions.'},
+   hl:{id:['Udara sejuk dataran tinggi','Dekat wisata Lembang','Suasana tenang'],en:['Cool highland air','Close to Lembang attractions','Quiet setting']}},
+  {id:'giri-gahana', name:'Bandung Giri Gahana', short:'GG', region:'timur', holes:18, par:72, year:1989, yk:'opened',
+   area:{id:'Jatinangor, Sumedang',en:'Jatinangor, Sumedang'},
+   dist:{id:'± 45 menit via Tol Padaleunyi',en:'About 45 minutes via the Padaleunyi toll road'},
+   desc:{id:'Karya Michael Coates & Associates di ketinggian sekitar 900 mdpl. Terdiri dari dua sembilan hole: Giri yang rindang dengan fairway lebar, dan Gahana dengan kontur naik turun yang dramatis. Fairway dan green memakai rumput bent.',
+         en:'A Michael Coates & Associates design at around 900 metres above sea level, with two nines: the tree-lined Giri with generous fairways, and the Gahana with dramatic elevation changes. Fairways and greens are bent grass.'},
+   hl:{id:['7.176 yard dari tee championship','Rumput bent','Resort di puncak bukit'],en:['7,176 yards from the back tees','Bent grass','Hilltop resort']}},
+  {id:'the-manor', name:'The Manor Golf & Estate', short:'TM', region:'jakarta', holes:18, par:72, year:1999, yk:'opened',
+   area:{id:'Soewarna, Soekarno-Hatta',en:'Soewarna, Soekarno-Hatta'},
+   dist:{id:'± 15 menit dari Bandara Soekarno-Hatta',en:'About 15 minutes from Soekarno-Hatta Airport'},
+   desc:{id:'Pilihan ideal bagi tamu yang baru mendarat atau akan terbang. Lapangan ini pernah menjadi tuan rumah Indonesia Open (European Tour) pada 2005 dan 2008. Hole andalannya, par 4 nomor 4, dimainkan melintasi laguna menuju green di semenanjung sempit.',
+         en:'Ideal for guests who have just landed or are about to fly out. The course hosted the European Tour\'s Indonesian Open in 2005 and 2008. Its signature par-4 4th is played across a lagoon to a narrow peninsula green.'},
+   hl:{id:['Tuan rumah Indonesia Open','Dekat Bandara Soekarno-Hatta','Driving range & golf academy'],en:['Former Indonesian Open host','Near Soekarno-Hatta Airport','Driving range & golf academy']}}
+];
+var PKGS = [
+  {id:'daytrip', sig:true, name:'Golf Day Trip', dur:{id:'1 hari',en:'1 day'},
+   desc:{id:'Main sehari di lapangan pilihan Anda, berangkat dan pulang dengan nyaman.',en:'A full day at the course of your choice, with a comfortable ride there and back.'},
+   incl:{id:['Transport pulang-pergi dengan chauffeur','Green fee dan caddie','Makan siang','Untuk 1 flight (maksimal 4 golfer)'],en:['Return transport with chauffeur','Green fee and caddie','Lunch','For one flight of up to four golfers']}},
+  {id:'weekend', name:'Golf Weekend', dur:{id:'2 hari 1 malam',en:'2 days, 1 night'},
+   desc:{id:'Dua lapangan berbeda dalam satu akhir pekan, dengan malam santai di Bandung.',en:'Two different courses in one weekend, with a relaxed evening in Bandung.'},
+   incl:{id:['2 lapangan pilihan','Hotel 1 malam','Transport selama trip','Green fee, caddie, dan makan'],en:['2 courses of your choice','1 hotel night','Transport throughout','Green fees, caddies, and meals']}},
+  {id:'getaway', name:'Golf Getaway', dur:{id:'3 hari 2 malam',en:'3 days, 2 nights'},
+   desc:{id:'Liburan golf lengkap untuk tamu dari Jakarta, Malaysia, dan Singapura.',en:'A complete golf holiday for guests from Jakarta, Malaysia, and Singapore.'},
+   incl:{id:['Jemput di bandara atau stasiun Whoosh','3 lapangan pilihan','Hotel 2 malam','Sore bebas untuk kuliner dan belanja'],en:['Pickup at the airport or Whoosh station','3 courses of your choice','2 hotel nights','Free afternoons for dining and shopping']}},
+  {id:'corporate', name:'Corporate Golf Day', dur:{id:'Sesuai kebutuhan',en:'Tailored'},
+   desc:{id:'Golf day atau turnamen kecil untuk perusahaan, klien, dan relasi bisnis.',en:'A golf day or small tournament for your company, clients, and business partners.'},
+   incl:{id:['Koordinasi lapangan dan tee time','Transport rombongan Hiace Premio Luxury','Beberapa flight sekaligus','Disusun per proposal'],en:['Course and tee time coordination','Group transport by Hiace Premio Luxury','Multiple flights at once','Tailored in a proposal']}}
+];
+var GOLFERS = [['1','1'],['2','2'],['3','3'],['4','4'],['5-8','5–8'],['9-12','9–12'],['13+','13+']];
+var GT = 'flight', crRegion = 'all';
+var PIN = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>';
+function courseById(id){return COURSES.filter(function(c){return c.id===id;})[0]||null;}
+function regionLabel(id){var r=REGIONS.filter(function(x){return x.id===id;})[0];return r?L(r.label):'';}
+function crStats(c){
+  if(!c.holes) return '';
+  return '<ul class="crs-stats"><li><b>'+c.holes+'</b><span>'+t('holes')+'</span></li><li><b>'+c.par+'</b><span>'+t('par')+'</span></li><li><b>'+c.year+'</b><span>'+t(c.yk)+'</span></li></ul>';
+}
+function crMedia(c,cls){
+  return '<div class="'+cls+'"><div class="crs-ph" aria-hidden="true"><span>'+c.short+'</span></div>'+(c.nophoto?'':'<img src="assets/golf/'+c.id+'.jpg" alt="'+c.name+'" loading="lazy" onerror="this.remove()">')+'</div>';
+}
+function renderCrFilters(){
+  var el=$('crFilters'); if(!el) return;
+  el.innerHTML = REGIONS.map(function(r){return '<button class="chip'+(r.id===crRegion?' on':'')+'" onclick="setCrRegion(\''+r.id+'\')">'+L(r.label)+'</button>';}).join('');
+}
+function setCrRegion(r){crRegion=r;renderCrFilters();renderCourses();}
+function renderCourses(){
+  var el=$('courseGrid'); if(!el) return;
+  var list = crRegion==='all' ? COURSES : COURSES.filter(function(c){return c.region===crRegion;});
+  el.innerHTML = list.map(function(c){
+    return '<article class="crs" id="crs-'+c.id+'">'+
+      crMedia(c,'crs-media')+
+      '<div class="crs-body">'+
+        '<span class="crs-region">'+regionLabel(c.region)+'</span>'+
+        '<h3>'+c.name+'</h3>'+
+        '<p class="crs-area">'+PIN+'<span>'+L(c.area)+' · '+L(c.dist)+'</span></p>'+
+        crStats(c)+
+        '<p class="crs-desc">'+L(c.desc)+'</p>'+
+        '<ul class="crs-hl">'+L(c.hl).map(function(h){return '<li>'+h+'</li>';}).join('')+'</ul>'+
+        '<div class="crs-foot"><button class="btn btn-primary btn-sm" onclick="golfPick(\''+c.id+'\')">'+t('bookTee')+'</button><button class="btn btn-out btn-sm" onclick="golfAsk(\''+c.id+'\')">'+t('askBtn')+'</button></div>'+
+      '</div></article>';
+  }).join('');
+}
+function renderPackages(){
+  var el=$('pkgGrid'); if(!el) return;
+  el.innerHTML = PKGS.map(function(p){
+    return '<article class="gpk'+(p.sig?' pk-sig':'')+'">'+
+      '<div class="pk-top"><span class="pk-dur">'+L(p.dur)+'</span>'+(p.sig?'<span class="pk-badge">'+t('pkgSig')+'</span>':'')+'</div>'+
+      '<h3>'+p.name+'</h3><p class="pk-desc">'+L(p.desc)+'</p>'+
+      '<ul class="pk-incl">'+L(p.incl).map(function(i){return '<li>'+I.check+i+'</li>';}).join('')+'</ul>'+
+      '<div class="pk-foot"><button class="btn '+(p.sig?'btn-light':'btn-primary')+' btn-sm" onclick="golfPkg(\''+p.id+'\')">'+t('pkgBook')+'</button><button class="btn btn-sm '+(p.sig?'btn-ghost':'btn-out')+'" onclick="pkgAsk(\''+p.id+'\')">'+t('pkgAsk')+'</button></div>'+
     '</article>';
   }).join('');
-  $('tourGrid').innerHTML = TOURS.filter(function(x){return !x.feat;}).map(function(x){
-    return '<article class="tc">'+
-      '<span class="tc-ic">'+svg(IC[x.ic])+'</span><h3>'+x.name+'</h3><p class="tc-desc">'+L(x.desc)+'</p>'+
+}
+function golferLabel(v){
+  if(v==='13+') return '13+ '+t('golfers')+' ('+t('group')+')';
+  if(v.indexOf('-')>-1){var f=v==='5-8'?2:3;return v.replace('-','–')+' '+t('golfers')+' ('+f+' '+t('flights')+')';}
+  return v+' '+(v==='1'?t('golfer'):t('golfers'));
+}
+function fillGolf(){
+  if(!$('gForm')) return;
+  var pk=$('gPkg').value, cr=$('gCourse').value, gg=$('gGolfers').value||'4', car=$('gCar').value||'alphard';
+  $('gPkg').innerHTML = PKGS.map(function(p){return opt(p.id,p.name+' · '+L(p.dur),p.id===pk);}).join('');
+  $('gCourse').innerHTML = opt('',t('anyCourse'),!cr) + COURSES.map(function(c){return opt(c.id,c.name+' · '+L(c.area),c.id===cr);}).join('');
+  $('gGolfers').innerHTML = GOLFERS.map(function(g){return opt(g[0],golferLabel(g[0]),g[0]===gg);}).join('');
+  $('gCar').innerHTML = CARS.map(function(c){return opt(c.id,c.name+' ('+c.seat+' '+t('seats')+')',c.id===car);}).join('');
+}
+function setGType(tp){
+  GT=tp;
+  document.querySelectorAll('#gForm .seg button').forEach(function(b){var on=b.getAttribute('data-gtype')===tp;b.classList.toggle('on',on);b.setAttribute('aria-checked',on);});
+  $('gPkgWrap').hidden = tp!=='package';
+}
+function toggleGTransport(){$('gCarWrap').hidden=!$('gTransport').checked;}
+function golfPick(id){if(!$('gForm'))return;setGType('flight');$('gCourse').value=id;golfReset();nav('pesan-golf');}
+function golfPkg(id){if(!$('gForm'))return;setGType('package');$('gPkg').value=id;golfReset();nav('pesan-golf');}
+function golfAsk(id){var c=courseById(id);if(!c)return false;window.open('https://wa.me/'+ADMIN_WA+'?text='+encodeURIComponent(t('waAskCourse').replace('{c}',c.name)),'_blank','noopener');return false;}
+function pkgAsk(id){var p=PKGS.filter(function(x){return x.id===id;})[0];if(!p)return false;window.open('https://wa.me/'+ADMIN_WA+'?text='+encodeURIComponent(t('waAskPkg').replace('{p}',p.name)),'_blank','noopener');return false;}
+function selText(id){var s=$(id);return s.options[s.selectedIndex]?s.options[s.selectedIndex].text:'';}
+function golfSubmit(ev){
+  ev.preventDefault();
+  var d=$('gDate'), n=$('gName'), p=$('gPhone');
+  var okp=p.value.replace(/[^0-9]/g,'').length>=9;
+  d.parentNode.classList.toggle('err',!d.value); n.parentNode.classList.toggle('err',!n.value.trim()); p.parentNode.classList.toggle('err',!okp);
+  if(!d.value||!n.value.trim()||!okp){toast(t('gNeed'));return;}
+  var M=[t('waGolfHi'),'','*'+t('wType')+':* '+(GT==='package'?t('gTPkg'):t('gTFlight'))];
+  if(GT==='package') M.push('*'+t('wPkg')+':* '+selText('gPkg'));
+  M.push('*'+t('wCourse')+':* '+selText('gCourse'),'*'+t('wDate')+':* '+fmtDate(d.value),'*'+t('wSession')+':* '+selText('gSession'),'*'+t('wGolfers')+':* '+selText('gGolfers'),'*'+t('wFrom')+':* '+selText('gFrom'),
+    '*'+t('wTransport')+':* '+($('gTransport').checked?selText('gCar'):t('wNo')));
+  var note=$('gNote').value.trim(); if(note) M.push('*'+t('wNote')+':* '+note);
+  M.push('','*'+t('waName')+':* '+n.value.trim(),'*WhatsApp:* '+p.value.trim());
+  var url='https://wa.me/'+ADMIN_WA+'?text='+encodeURIComponent(M.join('\n'));
+  $('gWaLink').href=url; $('gOk').hidden=false; $('gOk').scrollIntoView({behavior:'smooth',block:'center'});
+  try{window.open(url,'_blank','noopener');}catch(e){}
+}
+function golfReset(){var o=$('gOk');if(o)o.hidden=true;}
+function fmtDate(v){try{return new Date(v+'T00:00').toLocaleDateString(t('locale'),{weekday:'long',day:'numeric',month:'long',year:'numeric'});}catch(e){return v;}}
+
+/* landing strips */
+function renderLanding(){
+  var a=$('lpCourses'), b=$('lpFleet');
+  if(a) a.innerHTML = '<div class="hs-track">'+COURSES.map(function(c){
+    return '<a class="hc" href="tour.html#crs-'+c.id+'">'+crMedia(c,'hc-media')+
+      '<div class="hc-tx"><span class="crs-region">'+regionLabel(c.region)+'</span><h3>'+c.name+'</h3><p>'+L(c.area)+'</p>'+
+      (c.holes?'<span class="hc-meta">'+c.holes+' '+t('holes')+' · '+t('par')+' '+c.par+'</span>':'')+'</div></a>';
+  }).join('')+'</div>';
+  if(b) b.innerHTML = '<div class="hs-track">'+CARS.map(function(c){
+    return '<a class="hf" href="rental.html#armada"><div class="hf-img"><img src="'+c.img+'" alt="'+c.name+'" loading="lazy"></div>'+
+      '<div class="hf-tx"><span class="crs-region">'+L(c.kelas)+'</span><h3>'+c.name+'</h3><p>'+t('fromP')+' <b class="tnum">'+rupiah(c.price)+'</b></p></div></a>';
+  }).join('')+'</div>';
+}
+
+function renderTours(){
+  var g=$('tourGrid'); if(!g) return;
+  g.innerHTML = TOURS.filter(function(x){return x.id!=='golf';}).map(function(x){
+    return '<article class="tc'+(x.soon?' tc-soon':'')+'">'+
+      '<div class="tc-head"><span class="tc-ic">'+svg(IC[x.ic])+'</span>'+(x.soon?'<span class="tc-badge">'+t('soon')+'</span>':'')+'</div>'+
+      '<h3>'+x.name+'</h3><p class="tc-desc">'+L(x.desc)+'</p>'+
       '<div class="tc-fit"><span>'+t('fit')+'</span>'+L(x.fit)+'</div>'+
       '<button class="btn btn-out btn-sm" onclick="tourWA(\''+x.id+'\')">'+t('ask')+I.arrow+'</button>'+
     '</article>';
@@ -267,6 +482,15 @@ function fillSelects(){
 }
 
 /* ================= BAHASA ================= */
+var PAGE = document.body.getAttribute('data-page') || 'rental';
+var PAGE_META = {
+  landing:{id:['Cabin Trans · Luxury Fleet, Exceptional Service','Cabin Trans (PT. Cakra Bintang Transindo): rental mobil premium dengan chauffeur dan tour golf di Bandung. Alphard, Innova Zenix, Hiace Premio Luxury.'],
+           en:['Cabin Trans · Luxury Fleet, Exceptional Service','Cabin Trans (PT. Cakra Bintang Transindo): premium chauffeured car rental and golf tours in Bandung. Alphard, Innova Zenix, Hiace Premio Luxury.']},
+  rental:{id:['Rental Mobil Premium · Cabin Trans','Rental mobil premium dengan chauffeur di Bandung: Alphard, Innova Zenix, Hiace Premio Luxury. Airport transfer, city tour, dan mobilitas korporat. Reservasi online.'],
+          en:['Premium Car Rental · Cabin Trans','Premium chauffeured car rental in Bandung: Alphard, Innova Zenix, Hiace Premio Luxury. Airport transfers, city tours, and corporate mobility. Book online.']},
+  tour:{id:['Tour & Golf Bandung · Cabin Trans','Paket golf dan tiket flight di lapangan pilihan Bandung dan Jakarta, lengkap dengan transport premium Cabin Trans.'],
+        en:['Golf & Tours in Bandung · Cabin Trans','Golf packages and tee times at selected courses in Bandung and Jakarta, complete with premium Cabin Trans transport.']}
+};
 function applyStatic(){
   document.querySelectorAll('[data-i18n]').forEach(function(el){
     if(el.__o===undefined) el.__o = el.innerHTML;
@@ -282,34 +506,39 @@ function applyStatic(){
 function setLang(l, silent){
   LANG = l==='en' ? 'en' : 'id';
   document.documentElement.lang = LANG;
-  document.title = t('title');
-  var md=document.querySelector('meta[name=description]'); if(md) md.setAttribute('content',t('desc'));
+  var pm=(PAGE_META[PAGE]||PAGE_META.rental)[LANG];
+  document.title = pm[0];
+  var md=document.querySelector('meta[name=description]'); if(md) md.setAttribute('content',pm[1]);
   document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed', b.getAttribute('data-lang')===LANG);});
   applyStatic();
-  renderServices(); renderTours(); renderFilters(); renderCars(); fillSelects(); renderChoose();
-  if(step===2) updateDurNote();
-  if(step===5) renderSummary();
-  if(booking.name) $('sucName').textContent = booking.name;
+  if($('svcGrid')) renderServices();
+  renderTours(); renderCrFilters(); renderCourses(); renderPackages(); fillGolf(); renderLanding();
+  if($('cars')){ renderFilters(); renderCars(); }
+  if($('qSvc')) fillSelects();
+  if($('chooseCars')) renderChoose();
+  if($('bStart') && step===2) updateDurNote();
+  if($('summary') && step===5) renderSummary();
+  if(booking.name && $('sucName')) $('sucName').textContent = booking.name;
   if(!silent){try{localStorage.setItem('ct-lang',LANG);}catch(e){}}
 }
 
 /* ================= NAVIGASI ================= */
-var SECTIONS = ['beranda','tentang','layanan','tour','armada','keunggulan','alur','kontak'];
+var SECTIONS = Array.prototype.map.call(document.querySelectorAll('main section[id]'),function(s){return s.id;});
 function showView(v){document.querySelectorAll('.view').forEach(function(el){el.classList.toggle('active', el.id==='view-'+v);});}
 function nav(target){
   closeMenu();
   if(target==='reservasi'){
+    if(!$('view-booking')){ location.href='rental.html#reservasi'; return false; }
     showView('booking'); window.scrollTo({top:0,behavior:'smooth'}); setActive('');
     try{history.replaceState(null,'','#reservasi');}catch(e){}
     return false;
   }
-  var wasHidden = !$('view-home').classList.contains('active');
-  showView('home');
+  var home=$('view-home'), wasHidden = home ? !home.classList.contains('active') : false;
+  if(home) showView('home');
   var el = $(target);
-  if(el){
-    if(target==='beranda') window.scrollTo({top:0,behavior: wasHidden?'auto':'smooth'});
-    else el.scrollIntoView({behavior: wasHidden?'auto':'smooth', block:'start'});
-  }
+  if(!el){ if(['tentang','layanan','armada','keunggulan','alur'].indexOf(target)>-1) location.href='rental.html#'+target; return false; }
+  if(target==='beranda') window.scrollTo({top:0,behavior: wasHidden?'auto':'smooth'});
+  else el.scrollIntoView({behavior: wasHidden?'auto':'smooth', block:'start'});
   setActive(target);
   try{history.replaceState(null,'','#'+target);}catch(e){}
   return false;
@@ -321,7 +550,7 @@ function watchSections(){
   if(!('IntersectionObserver' in window))return;
   var io = new IntersectionObserver(function(entries){
     entries.forEach(function(e){
-      if(e.isIntersecting && $('view-home').classList.contains('active')) setActive(e.target.id==='alur'?'keunggulan':e.target.id);
+      if(e.isIntersecting && (!$('view-home') || $('view-home').classList.contains('active'))) setActive(e.target.id);
     });
   },{rootMargin:'-45% 0px -50% 0px'});
   SECTIONS.forEach(function(id){var el=$(id);if(el)io.observe(el);});
@@ -438,8 +667,15 @@ var toastEl;function toast(msg){if(!toastEl){toastEl=document.createElement('div
 
 /* ================= INIT ================= */
 (function(){var l='id';try{l=localStorage.getItem('ct-lang')||'id';}catch(e){}setLang(l,true);})();
-$('qDate').value=today();$('qDate').min=today();
-$('bStart').addEventListener('change',updateDurNote);$('bEnd').addEventListener('change',updateDurNote);
+if($('qDate')){$('qDate').value=today();$('qDate').min=today();}
+if($('gDate')){$('gDate').min=today();}
+if($('bStart')){$('bStart').addEventListener('change',updateDurNote);$('bEnd').addEventListener('change',updateDurNote);}
 document.addEventListener('keydown',function(e){if((e.key==='Enter'||e.key===' ')&&e.target.getAttribute&&e.target.getAttribute('role')==='button'){e.preventDefault();e.target.click();}});
 watchSections();
-(function(){var h=(location.hash||'').replace('#','');if(h==='reservasi'||SECTIONS.indexOf(h)>-1)setTimeout(function(){nav(h);},60);})();
+(function(){var h=(location.hash||'').replace('#','');if(!h)return;
+  if(h==='reservasi'||SECTIONS.indexOf(h)>-1){setTimeout(function(){nav(h);},60);return;}
+  var el=$(h); if(el) setTimeout(function(){el.scrollIntoView({block:'start'});},120);})();
+/* header: transparan di atas hero landing, solid saat scroll */
+(function(){var hd=$('siteHeader'); if(!hd||PAGE!=='landing') return;
+  var f=function(){hd.classList.toggle('scrolled', window.scrollY>40 || $('mobileMenu').classList.contains('open'));};
+  window.addEventListener('scroll',f,{passive:true}); document.addEventListener('click',function(){setTimeout(f,0);}); f();})();
