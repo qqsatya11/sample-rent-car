@@ -79,11 +79,11 @@ var EN = {
   'ok.h':'Booking received','ok.thanks':'Thank you,','ok.code':'Your booking code is:',
   'ok.p':'Your confirmation message is ready. If WhatsApp did not open automatically, use the button below.',
   'ok.open':'Open WhatsApp','ok.new':'Make another booking',
-  'ft.p':'Luxury Fleet, Exceptional Service. Golf tours and premium car rental in Bandung, delivered to premium, professional standards.',
+  'ft.p':'Luxury Fleet, Exceptional Service. Golf, tours, and premium car rental in Bandung, delivered to premium, professional standards.',
   'ft.explore':'Explore','ft.courses':'Golf Courses',
   'nav.rental':'Car Rental','nav.tourGolf':'Tours &amp; Golf','nav.aboutUs':'About Us','nav.bookGolf':'Book Golf',
-  'promo.kick':'Tours &amp; Golf','promo.h2':'Play golf in the Bandung highlands, <span class="hl">we will do the driving</span>',
-  'promo.p':'Golf packages and tee times at selected courses, complete with premium Cabin Trans transport from the airport, the station, or your hotel.','promo.btn':'Explore Tours &amp; Golf',
+  'promo.kick':'Golf','promo.h2':'Play golf in the Bandung highlands, <span class="hl">we will do the driving</span>',
+  'promo.p':'Golf packages and tee times at selected courses, complete with premium Cabin Trans transport from the airport, the station, or your hotel.','promo.btn':'Explore Golf',
   'lp.eyebrow':'Cabin Trans · Bandung','lp.sub':'Golf tours and premium chauffeured car rental in Bandung, delivered with precise, professional service.',
   'lp.ctaRental':'Car Rental','lp.ctaTour':'Tours &amp; Golf',
   'lp.p1kick':'Premium Car Rental','lp.p1h':'A premium fleet, professional chauffeurs','lp.p1p':'Alphard, Innova Zenix, and Hiace Premio Luxury for airport transfers, city tours, and business travel.','lp.explore':'Explore',
@@ -93,7 +93,7 @@ var EN = {
   'lp.f1b':'Professional chauffeurs','lp.f1s':'Well-groomed, courteous, and expert on every route','lp.f2b':'Well-kept fleet','lp.f2s':'Clean, late-model, and checked before every trip','lp.f3b':'Always on time','lp.f3s':'Real-time coordination with a standby vehicle',
   'lp.gKick':'Partner Courses','lp.gH':'Selected courses, <span class="hl">tee times sorted</span>','lp.gBtn':'See all courses',
   'lp.fKick':'Our Fleet','lp.fH':'Arrive in style, <span class="hl">travel in comfort</span>','lp.fBtn':'View fleet &amp; rates',
-  'tr.eyebrow':'Tours &amp; Golf · Bandung','tr.h1':'Golf in the <em>Bandung</em> highlands','tr.lead':'Your tee time is sorted. All you do is play.',
+  'tr.eyebrow':'Golf · Bandung','tr.h1':'Golf in the <em>Bandung</em> highlands','tr.lead':'Your tee time is sorted. All you do is play.',
   'tr.desc':'Book a golf package or just a tee time at selected courses in Bandung and Jakarta. Premium transport, green fees, and caddies, all arranged in a single booking.',
   'tr.cta1':'Book a Tee Time','tr.cta2':'View Courses','tr.t1':'6 selected courses','tr.t2':'Premium transport','tr.t3':'Tee times or packages',
   'tr.badge':'Golf<br>Experience','tr.badgeSub':'From pickup to the final hole.',
@@ -131,6 +131,17 @@ var EN = {
   'fq.q3':'Can you pick us up from the airport or the Whoosh station?','fq.a3':'Yes. Pickups from Soekarno-Hatta, Kertajati, or the Whoosh station are included in golf packages and available as an add-on for tee time bookings.',
   'fq.q4':'What if it rains or our plans change?','fq.a4':'Rescheduling follows each course\'s own policy. We will share the details when we confirm your booking.',
   'fq.q5':'Do you welcome international guests?','fq.a5':'Yes. We host guests from Malaysia, Singapore, and beyond, with communication in English.',
+  'nav.golf':'Golf','nav.tour2':'Tours','nav.seeTours':'View Packages',
+  'to.note2':'Looking for golf packages?','to.noteLink2':'Visit the Golf page',
+  'tv.eyebrow':'Tours &amp; Travel · Bandung','tv.h1':'Explore West Java, <em>effortlessly</em>','tv.lead':'The route is planned and the vehicle is ready. You just enjoy the journey.',
+  'tv.desc':'Trips for families, companies, schools, and communities, all run on Cabin Trans vehicles and chauffeurs, with pickup from the airport, the Whoosh station, or your hotel.',
+  'tv.cta1':'View Tour Packages','tv.cta2':'Plan a Route','tv.t1':'Our own fleet','tv.t2':'Itineraries built around you','tv.t3':'Airport &amp; Whoosh pickup',
+  'tv.badge':'Private<br>&amp; Group','tv.badgeSub':'For families, offices, and schools.',
+  'tw.kick':'02 · How to Book','tw.h2':'Four steps <span class="hl">to your journey</span>','tw.p':'Tell us your plans and we will put together the route and details. You always know the cost before you pay.',
+  'tw.s1':'Share your plans','tw.s1p':'Dates, destination, and group size, via WhatsApp.','tw.s2':'Get a quote','tw.s2p':'A clear itinerary and cost breakdown, adjustable to your needs.',
+  'tw.s3':'Lock it in','tw.s3p':'A down payment secures your vehicle and dates.','tw.s4':'Set off','tw.s4p':'Your chauffeur arrives on time. We handle the rest.',
+  'lpm.h1':'Arrive<br>Exceptionally','lpm.h1b':'Arrive Exceptionally','lpm.tGolf':'Tee times at selected Bandung courses','lpm.tTour':'Private and group journeys','lpm.tRent':'A premium fleet with chauffeurs',
+  'lpm.cGolf':'Golf in the Bandung highlands','lpm.cTour':'Journeys designed around you','lpm.cRent':'A premium fleet, professional chauffeurs','lpm.discover':'Discover',
   'ft.about':'About Us','ft.book':'Book Online','ft.note':'Prices shown are indicative and confirmed by our team.'
 };
 
@@ -423,7 +434,7 @@ function fmtDate(v){try{return new Date(v+'T00:00').toLocaleDateString(t('locale
 function renderLanding(){
   var a=$('lpCourses'), b=$('lpFleet');
   if(a) a.innerHTML = '<div class="hs-track">'+COURSES.map(function(c){
-    return '<a class="hc" href="tour.html#crs-'+c.id+'">'+crMedia(c,'hc-media')+
+    return '<a class="hc" href="golf.html#crs-'+c.id+'">'+crMedia(c,'hc-media')+
       '<div class="hc-tx"><span class="crs-region">'+regionLabel(c.region)+'</span><h3>'+c.name+'</h3><p>'+L(c.area)+'</p>'+
       (c.holes?'<span class="hc-meta">'+c.holes+' '+t('holes')+' · '+t('par')+' '+c.par+'</span>':'')+'</div></a>';
   }).join('')+'</div>';
@@ -487,8 +498,10 @@ var PAGE_META = {
            en:['Cabin Trans · Luxury Fleet, Exceptional Service','Cabin Trans (PT. Cakra Bintang Transindo): golf tours at selected Bandung courses and premium chauffeured car rental. Alphard, Innova Zenix, Hiace Premio Luxury.']},
   rental:{id:['Rental Mobil Premium · Cabin Trans','Rental mobil premium dengan chauffeur di Bandung: Alphard, Innova Zenix, Hiace Premio Luxury. Airport transfer, city tour, dan mobilitas korporat. Reservasi online.'],
           en:['Premium Car Rental · Cabin Trans','Premium chauffeured car rental in Bandung: Alphard, Innova Zenix, Hiace Premio Luxury. Airport transfers, city tours, and corporate mobility. Book online.']},
-  tour:{id:['Tour & Golf Bandung · Cabin Trans','Paket golf dan tiket flight di lapangan pilihan Bandung dan Jakarta, lengkap dengan transport premium Cabin Trans.'],
-        en:['Golf & Tours in Bandung · Cabin Trans','Golf packages and tee times at selected courses in Bandung and Jakarta, complete with premium Cabin Trans transport.']}
+  golf:{id:['Golf Bandung · Cabin Trans','Paket golf dan tiket flight di lapangan pilihan Bandung dan Jakarta, lengkap dengan transport premium Cabin Trans.'],
+        en:['Golf in Bandung · Cabin Trans','Golf packages and tee times at selected courses in Bandung and Jakarta, complete with premium Cabin Trans transport.']},
+  tour:{id:['Tour & Travel Bandung · Cabin Trans','Paket tour dan perjalanan dengan armada Cabin Trans: private trip, open trip, corporate outing, study tour, MICE, dan fishing trip.'],
+        en:['Tours & Travel in Bandung · Cabin Trans','Tours and trips on the Cabin Trans fleet: private trips, open trips, corporate outings, study tours, MICE, and fishing trips.']}
 };
 function applyStatic(){
   document.querySelectorAll('[data-i18n]').forEach(function(el){
