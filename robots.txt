@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /landing-b
+Disallow: /landing-c
+
+Sitemap: https://cabintrans.id/sitemap.xml

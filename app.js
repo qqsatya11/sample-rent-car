@@ -495,14 +495,14 @@ function fillSelects(){
 /* ================= BAHASA ================= */
 var PAGE = document.body.getAttribute('data-page') || 'rental';
 var PAGE_META = {
-  landing:{id:['Cabin Trans · Luxury Fleet, Exceptional Service','Cabin Trans (PT. Cakra Bintang Transindo): tour golf di lapangan pilihan Bandung dan rental mobil premium dengan chauffeur. Alphard, Innova Zenix, Hiace Premio Luxury.'],
-           en:['Cabin Trans · Luxury Fleet, Exceptional Service','Cabin Trans (PT. Cakra Bintang Transindo): golf tours at selected Bandung courses and premium chauffeured car rental. Alphard, Innova Zenix, Hiace Premio Luxury.']},
-  rental:{id:['Rental Mobil Premium · Cabin Trans','Rental mobil premium dengan chauffeur di Bandung: Alphard, Innova Zenix, Hiace Premio Luxury. Airport transfer, city tour, dan mobilitas korporat. Reservasi online.'],
-          en:['Premium Car Rental · Cabin Trans','Premium chauffeured car rental in Bandung: Alphard, Innova Zenix, Hiace Premio Luxury. Airport transfers, city tours, and corporate mobility. Book online.']},
-  golf:{id:['Golf · Cabin Trans','Paket golf dan tiket flight di lapangan pilihan Bandung dan Jakarta, lengkap dengan transport premium Cabin Trans.'],
-        en:['Golf · Cabin Trans','Golf packages and tee times at selected courses in Bandung and Jakarta, complete with premium Cabin Trans transport.']},
-  tour:{id:['Tour & Travel Bandung · Cabin Trans','Paket tour dan perjalanan dengan armada Cabin Trans: private trip, open trip, corporate outing, study tour, MICE, dan fishing trip.'],
-        en:['Tours & Travel in Bandung · Cabin Trans','Tours and trips on the Cabin Trans fleet: private trips, open trips, corporate outings, study tours, MICE, and fishing trips.']}
+  landing:{id:['Cabin Trans · Golf, Tour & Rental Mobil Premium','Cabin Trans (PT. Cakra Bintang Transindo) melayani paket golf dan tee time, tour, serta rental mobil premium dengan chauffeur profesional. Alphard, Hiace Premio Luxury, Innova Zenix.'],
+           en:['Cabin Trans · Golf, Tours & Premium Car Rental','Cabin Trans (PT. Cakra Bintang Transindo) offers golf packages and tee times, tours, and premium car rental with professional chauffeurs. Alphard, Hiace Premio Luxury, Innova Zenix.']},
+  golf:{id:['Paket Golf & Tee Time dengan Transport Premium · Cabin Trans','Paket golf dan tiket flight di lapangan pilihan Bandung dan Jakarta: Parahyangan, Dago Heritage 1917, Mountain View, Poltak, Bandung Giri Gahana, The Manor. Lengkap dengan transport premium Cabin Trans.'],
+        en:['Golf Packages & Tee Times with Premium Transport · Cabin Trans','Golf packages and tee times at selected courses in Bandung and Jakarta: Parahyangan, Dago Heritage 1917, Mountain View, Poltak, Bandung Giri Gahana, The Manor. Complete with premium Cabin Trans transport.']},
+  tour:{id:['Paket Tour, Corporate Outing & MICE · Cabin Trans','Paket tour dan perjalanan dengan armada dan chauffeur Cabin Trans: private & family trip, open trip, corporate outing, study tour, MICE, dan fishing trip.'],
+        en:['Tour Packages, Corporate Outings & MICE · Cabin Trans','Tours and trips with the Cabin Trans fleet and chauffeurs: private & family trips, open trips, corporate outings, study tours, MICE, and fishing trips.']},
+  rental:{id:['Rental Alphard & Mobil Premium dengan Chauffeur · Cabin Trans','Rental mobil premium dengan chauffeur profesional: Alphard, Hiace Premio Luxury, Hiace Commuter, Innova Zenix, Innova Reborn. Airport transfer, city tour, dan mobilitas korporat. Reservasi online.'],
+          en:['Alphard & Premium Car Rental with Chauffeur · Cabin Trans','Premium car rental with professional chauffeurs: Alphard, Hiace Premio Luxury, Hiace Commuter, Innova Zenix, Innova Reborn. Airport transfers, city tours, and corporate mobility. Book online.']}
 };
 function applyStatic(){
   document.querySelectorAll('[data-i18n]').forEach(function(el){
@@ -522,6 +522,7 @@ function setLang(l, silent){
   var pm=(PAGE_META[PAGE]||PAGE_META.rental)[LANG];
   document.title = pm[0];
   var md=document.querySelector('meta[name=description]'); if(md) md.setAttribute('content',pm[1]);
+  document.documentElement.lang=LANG;
   document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed', b.getAttribute('data-lang')===LANG);});
   applyStatic();
   if($('svcGrid')) renderServices();
