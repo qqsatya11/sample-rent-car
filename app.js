@@ -1,6 +1,6 @@
 /* Cabin Trans · company profile + reservasi · bilingual ID / EN */
 var ADMIN_WA = '6281110028375';
-var DRIVER_FEE = 150000;
+var DRIVER_FEE = 0; /* harga unit sudah all-in termasuk chauffeur */
 var LANG = 'id';
 
 /* ================= TEKS (ID / EN) =================
@@ -29,7 +29,7 @@ var EN = {
   'fleet.kick':'03 · Our Fleet',
   'fleet.h2':'Arrive in style, <span class="hl">travel in comfort</span>',
   'fleet.p':'Five well-kept, late-model vehicles. Choose the one that suits your group and your trip, then book it online in minutes.',
-  'fleet.note':'Rates cover the vehicle only and exclude the chauffeur. Final pricing is confirmed by our team based on your schedule and route.',
+  'fleet.note':'Prices include a professional chauffeur. The final price is confirmed by our team based on your schedule and route.',
   'pil.kick':'04 · Why Cabin Trans',
   'pil.h2':'Five pillars of <span class="hl">the Cabin Trans standard</span>',
   'pil.p':'A comfortable vehicle is only the starting point. What sets us apart is operational discipline, rigorous safety standards, and world-class hospitality.',
@@ -67,7 +67,7 @@ var EN = {
   'bk.start':'Pickup date &amp; time','bk.end':'End date &amp; time','bk.loc':'Pickup point',
   'loc.1':'Your address (Bandung)','loc.2':'Cabin Trans office, Jl. Pangkur No. 11, Bandung','loc.3':'Husein Sastranegara Airport','loc.4':'Kertajati Airport (BIJB)','loc.5':'Bandung Station','loc.6':'Other (add details in the notes)',
   'bk.h3':'Choose your service','bk.sub3':'Your type of trip. Every vehicle comes with a professional chauffeur.','bk.svc':'Service type',
-  'bk.drvT':'With Chauffeur','bk.drvP':'A uniformed, courteous chauffeur who knows every route. Simply sit back and relax.','bk.drvPr':'+Rp150.000 / day',
+  'bk.drvT':'With Chauffeur','bk.drvP':'A uniformed, courteous chauffeur who knows every route. Simply sit back and relax.','bk.drvPr':'Included in the price',
   'bk.selfT':'Self-Drive','bk.selfP':'You do the driving. A valid driving licence and ID verification are required.','bk.selfPr':'No chauffeur fee',
   'bk.note':'Additional notes <span class="hint">(optional)</span>','bk.notePh':'e.g. flight number, city tour route, child seat required',
   'bk.h4':'Your details','bk.sub4':'We use these to confirm your booking.',
