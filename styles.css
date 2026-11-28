@@ -803,21 +803,21 @@ html.ct-intro .ct-loader::before{content:"";position:absolute;inset:0;pointer-ev
 html.ct-intro .ct-loader::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,#003dc5 30%,#003dc5 70%,transparent);opacity:0;transition:opacity .4s}
 .ctl-canvas{position:absolute;inset:0;display:block;pointer-events:none}
 .ctl-stage{position:relative;width:min(40vw,28vh,210px);aspect-ratio:196/200;margin-bottom:34px}
-.ctl-stage::after{content:"";position:absolute;left:12%;right:12%;bottom:-26px;height:22px;border-radius:50%;background:radial-gradient(closest-side,rgba(18,26,51,.22),rgba(18,26,51,0));filter:blur(4px);opacity:0;transform:scaleX(.6);transition:opacity 1.4s cubic-bezier(.16,1,.3,1),transform 1.4s cubic-bezier(.16,1,.3,1)}
+.ctl-stage::after{content:"";position:absolute;left:12%;right:12%;bottom:-26px;height:22px;border-radius:50%;background:radial-gradient(closest-side,rgba(18,26,51,.22),rgba(18,26,51,0));filter:blur(4px);opacity:0;transform:scaleX(.6);transition:opacity 2s cubic-bezier(.45,0,.25,1),transform 2s cubic-bezier(.45,0,.25,1)}
 html.ctl-set .ctl-stage::after{opacity:1;transform:none}
 .ctl-fallback{position:relative;z-index:1;width:100%;height:100%;object-fit:contain;opacity:0;transform:scale(.9);filter:blur(6px)}
-html.ctl-fb .ctl-fallback{animation:ctlfb 1.2s cubic-bezier(.16,1,.3,1) forwards}
+html.ctl-fb .ctl-fallback{animation:ctlfb 1.8s cubic-bezier(.16,1,.3,1) forwards}
 html.ctl-3d .ctl-fallback{display:none}
-.ctl-wm{position:relative;width:min(64vw,270px);height:auto;opacity:0;clip-path:inset(0 50% 0 50%);filter:blur(6px);transform:scale(1.04);transition:clip-path 1.2s cubic-bezier(.16,1,.3,1),filter 1s ease,opacity .6s ease,transform 1.4s cubic-bezier(.16,1,.3,1)}
+.ctl-wm{position:relative;width:min(64vw,270px);height:auto;opacity:0;clip-path:inset(0 50% 0 50%);filter:blur(6px);transform:scale(1.04);transition:clip-path 1.8s cubic-bezier(.65,0,.35,1),filter 1.6s ease,opacity 1.2s ease,transform 2s cubic-bezier(.45,0,.25,1)}
 html.ctl-word .ctl-wm{opacity:1;clip-path:inset(0 0 0 0);filter:none;transform:none}
-.ctl-rule{position:relative;display:block;width:min(46vw,170px);height:1px;margin-top:20px;background:linear-gradient(90deg,transparent,#003dc5 50%,transparent);transform:scaleX(0);transition:transform 1.3s cubic-bezier(.65,0,.35,1) .1s}
+.ctl-rule{position:relative;display:block;width:min(46vw,170px);height:1px;margin-top:20px;background:linear-gradient(90deg,transparent,#003dc5 50%,transparent);transform:scaleX(0);transition:transform 1.8s cubic-bezier(.65,0,.35,1) .3s}
 html.ctl-word .ctl-rule{transform:scaleX(1)}
-.ctl-tag{position:relative;margin-top:14px;font:500 10.5px/1 Barlow,system-ui,sans-serif;letter-spacing:.5em;text-transform:uppercase;color:#767881;padding-left:.5em;opacity:0;transition:opacity 1s ease .45s,letter-spacing 1.6s cubic-bezier(.16,1,.3,1) .35s}
+.ctl-tag{position:relative;margin-top:14px;font:500 10.5px/1 Barlow,system-ui,sans-serif;letter-spacing:.5em;text-transform:uppercase;color:#767881;padding-left:.5em;opacity:0;transition:opacity 1.4s ease .7s,letter-spacing 2.2s cubic-bezier(.45,0,.25,1) .6s}
 html.ctl-word .ctl-tag{opacity:1;letter-spacing:.34em}
-html.ctl-exit .ct-loader{transform:translateY(-100%);transition:transform 1.05s cubic-bezier(.76,0,.24,1) .12s}
+html.ctl-exit .ct-loader{transform:translateY(-100%);transition:transform 1.3s cubic-bezier(.65,0,.35,1) .25s}
 html.ctl-exit .ct-loader::after{opacity:1}
-html.ctl-exit .ctl-wm,html.ctl-exit .ctl-rule,html.ctl-exit .ctl-tag,html.ctl-exit .ctl-stage::after{opacity:0;transition:opacity .35s ease}
+html.ctl-exit .ctl-wm,html.ctl-exit .ctl-rule,html.ctl-exit .ctl-tag,html.ctl-exit .ctl-stage::after{opacity:0;transition:opacity .6s ease}
 @keyframes ctlfb{to{opacity:1;transform:none;filter:none}}
 @media (max-width:600px){.ctl-stage{margin-bottom:28px}.ctl-tag{font-size:9.5px}}
-html.ct-intro .ctl-canvas{opacity:0;animation:ctlcv 1.1s cubic-bezier(.16,1,.3,1) .05s forwards}
+html.ct-intro .ctl-canvas{opacity:0;animation:ctlcv 1.6s cubic-bezier(.45,0,.25,1) .05s forwards}
 @keyframes ctlcv{to{opacity:1}}
