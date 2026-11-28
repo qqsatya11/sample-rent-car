@@ -426,6 +426,7 @@ function golfSubmit(ev){
   M.push('','*'+t('waName')+':* '+n.value.trim(),'*WhatsApp:* '+p.value.trim());
   var url='https://wa.me/'+ADMIN_WA+'?text='+encodeURIComponent(M.join('\n'));
   $('gWaLink').href=url; $('gOk').hidden=false; $('gOk').scrollIntoView({behavior:'smooth',block:'center'});
+  ctTrack('Lead',{content_name:'Golf Form',content_category:'golf'});
   try{window.open(url,'_blank','noopener');}catch(e){}
 }
 function golfReset(){var o=$('gOk');if(o)o.hidden=true;}
@@ -665,6 +666,7 @@ function confirmBooking(){
   var r=calcTotal();if(!r)return;var code=bookingCode(),url='https://wa.me/'+ADMIN_WA+'?text='+buildMsg(r,code);
   $('waLink').href=url;$('sucName').textContent=booking.name;$('sucCode').textContent=code;
   $('summaryWrap').hidden=true;$('successBox').hidden=false;
+  ctTrack('Lead',{content_name:'Rental Booking',content_category:'rental'});
   try{window.open(url,'_blank','noopener');}catch(e){}
 }
 function resetBooking(){
@@ -717,3 +719,9 @@ watchSections();
   document.addEventListener('visibilitychange',function(){if(!document.hidden){restartBar();tick();}else clearTimeout(t);});
   if(still&&nav_)nav_.classList.add('paused');
   tick();})();
+
+/* Tracking: Meta Pixel (Lead = form golf/booking rental, Contact = klik WhatsApp lain) */
+var __ctLeadAt=0;
+function ctTrack(ev,p){try{if(ev==='Lead')__ctLeadAt=Date.now();if(window.fbq)fbq('track',ev,p||{});if(window.dataLayer)dataLayer.push({event:'ct_'+ev.toLowerCase(),ct_params:p||{}});}catch(e){}}
+(function(){var o=window.open;window.open=function(u){try{if(typeof u==='string'&&u.indexOf('wa.me/')>-1&&Date.now()-__ctLeadAt>1500)ctTrack('Contact',{content_name:'WhatsApp',page:PAGE});}catch(e){}return o.apply(window,arguments);};
+document.addEventListener('click',function(e){var a=e.target.closest&&e.target.closest('a[href*="wa.me/"]');if(a)ctTrack('Contact',{content_name:'WhatsApp',page:PAGE});},true);})();
