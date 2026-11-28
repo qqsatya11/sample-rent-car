@@ -143,7 +143,7 @@ var EN = {
   'tw.s3':'Lock it in','tw.s3p':'A down payment secures your vehicle and dates.','tw.s4':'Set off','tw.s4p':'Your chauffeur arrives on time. We handle the rest.',
   'lpm.h1':'Arrive<br>Exceptionally','lpm.h1b':'Arrive Exceptionally','lpm.tGolf':'Tee times at selected Bandung courses','lpm.tTour':'Private and group journeys','lpm.tRent':'A premium fleet with chauffeurs',
   'lpm.cGolf':'Golf in the Bandung highlands','lpm.cTour':'Journeys designed around you','lpm.cRent':'A premium fleet, professional chauffeurs','lpm.discover':'Discover',
-  'ft.about':'About Us','ft.book':'Book Online','ft.note':'Prices shown are indicative and confirmed by our team.'
+  'ft.about':'About Us','ft.book':'Book Online','ft.note':'Final prices are confirmed by our team.'
 };
 
 /* teks yang dipakai JS */
@@ -496,13 +496,13 @@ function fillSelects(){
 /* ================= BAHASA ================= */
 var PAGE = document.body.getAttribute('data-page') || 'rental';
 var PAGE_META = {
-  landing:{id:['Cabin Trans · Golf, Tour & Rental Mobil Premium','Cabin Trans (PT. Cakra Bintang Transindo) melayani paket golf dan tee time, tour, serta rental mobil premium dengan chauffeur profesional. Alphard, Hiace Premio Luxury, Innova Zenix.'],
+  landing:{id:['Cabin Trans: Golf Bandung, Tour & Rental Mobil Premium dengan Sopir','Cabin Trans Bandung: paket golf Bandung dan tee time, paket tour Bandung, serta rental mobil Bandung dengan sopir profesional. Sewa Alphard, Hiace Premio Luxury, Innova Zenix.'],
            en:['Cabin Trans · Golf, Tours & Premium Car Rental','Cabin Trans (PT. Cakra Bintang Transindo) offers golf packages and tee times, tours, and premium car rental with professional chauffeurs. Alphard, Hiace Premio Luxury, Innova Zenix.']},
-  golf:{id:['Paket Golf & Tee Time dengan Transport Premium · Cabin Trans','Paket golf dan tiket flight di lapangan pilihan Bandung dan Jakarta: Parahyangan, Dago Heritage 1917, Mountain View, Poltak, Bandung Giri Gahana, The Manor. Lengkap dengan transport premium Cabin Trans.'],
+  golf:{id:['Paket Golf Bandung & Tee Time, Transport Premium | Cabin Trans','Paket golf dan tiket flight di lapangan pilihan Bandung dan Jakarta: Parahyangan, Dago Heritage 1917, Mountain View, Poltak, Bandung Giri Gahana, The Manor. Lengkap dengan transport premium Cabin Trans.'],
         en:['Golf Packages & Tee Times with Premium Transport · Cabin Trans','Golf packages and tee times at selected courses in Bandung and Jakarta: Parahyangan, Dago Heritage 1917, Mountain View, Poltak, Bandung Giri Gahana, The Manor. Complete with premium Cabin Trans transport.']},
-  tour:{id:['Paket Tour, Corporate Outing & MICE · Cabin Trans','Paket tour dan perjalanan dengan armada dan chauffeur Cabin Trans: private & family trip, open trip, corporate outing, study tour, MICE, dan fishing trip.'],
+  tour:{id:['Paket Tour Bandung, Corporate Outing & MICE | Cabin Trans','Paket tour Bandung dan Jawa Barat dengan armada dan chauffeur Cabin Trans: private & family trip, open trip, corporate outing, study tour, MICE, dan fishing trip.'],
         en:['Tour Packages, Corporate Outings & MICE · Cabin Trans','Tours and trips with the Cabin Trans fleet and chauffeurs: private & family trips, open trips, corporate outings, study tours, MICE, and fishing trips.']},
-  rental:{id:['Rental Alphard & Mobil Premium dengan Chauffeur · Cabin Trans','Rental mobil premium dengan chauffeur profesional: Alphard, Hiace Premio Luxury, Hiace Commuter, Innova Zenix, Innova Reborn. Airport transfer, city tour, dan mobilitas korporat. Reservasi online.'],
+  rental:{id:['Rental Mobil Bandung dengan Sopir: Alphard, Hiace, Innova | Cabin Trans','Rental mobil Bandung dengan sopir profesional: sewa Alphard, Hiace Premio Luxury, Hiace Commuter, Innova Zenix, Innova Reborn. Airport transfer, city tour, dan mobilitas korporat.'],
           en:['Alphard & Premium Car Rental with Chauffeur · Cabin Trans','Premium car rental with professional chauffeurs: Alphard, Hiace Premio Luxury, Hiace Commuter, Innova Zenix, Innova Reborn. Airport transfers, city tours, and corporate mobility. Book online.']}
 };
 function applyStatic(){
@@ -520,9 +520,9 @@ function applyStatic(){
 function setLang(l, silent){
   LANG = l==='en' ? 'en' : 'id';
   document.documentElement.lang = LANG;
-  var pm=(PAGE_META[PAGE]||PAGE_META.rental)[LANG];
+  if(PAGE_META[PAGE]){var pm=PAGE_META[PAGE][LANG];
   document.title = pm[0];
-  var md=document.querySelector('meta[name=description]'); if(md) md.setAttribute('content',pm[1]);
+  var md=document.querySelector('meta[name=description]'); if(md) md.setAttribute('content',pm[1]);}
   document.documentElement.lang=LANG;
   document.querySelectorAll('.lang button').forEach(function(b){b.setAttribute('aria-pressed', b.getAttribute('data-lang')===LANG);});
   applyStatic();
