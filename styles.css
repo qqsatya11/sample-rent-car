@@ -790,3 +790,8 @@ body[data-page="seo"] .lang{display:none}
 .seo-related a{display:block;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--card);text-decoration:none}
 @media (max-width:860px){.seo-hero-in{grid-template-columns:1fr;gap:28px}.seo-hero-img{aspect-ratio:16/10}}
 @media (max-width:640px){.seo-body p,.seo-body li{font-size:15.5px}.seo-ctabox{padding:20px}}
+/* maps embed */
+.cmap{margin-top:28px;border-radius:18px;overflow:hidden;border:1px solid var(--line);aspect-ratio:16/10;background:var(--brand-soft)}
+.cmap iframe{width:100%;height:100%;border:0;display:block}
+.lp-foot-r a[data-i18n="ct.map"]{white-space:nowrap}
+footer .fc a[data-i18n="ct.map"]{font-weight:600}

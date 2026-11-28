@@ -58,7 +58,7 @@ var EN = {
   'banner.b':'A sanitized cabin, every journey.','banner.s':'Deep cleaned before you step in and after you step out.','banner.btn':'Start Booking',
   'ct.kick':'Contact Us','ct.h2':'Ready to <span class="hl">travel with us?</span>',
   'ct.p':'Tell us your schedule, route, and group size. Our team will help you plan the right journey, from airport transfers to full-day city tours.',
-  'ct.wa':'Chat on WhatsApp','ct.co':'Company','ct.copy':'Copy','ct.addr':'Address','ct.care':'Available 24/7',
+  'ct.wa':'Chat on WhatsApp','ct.co':'Company','ct.copy':'Copy','ct.addr':'Address','ct.map':'View on Google Maps','ct.care':'Available 24/7',
   'bk.kick':'Online Booking','bk.h2':'Book <span class="hl">your journey</span>',
   'bk.p':'Five quick steps. Your booking details go straight to our team on WhatsApp for confirmation.',
   'bk.st1':'1 · Vehicle','bk.st2':'2 · Schedule','bk.st3':'3 · Service','bk.st4':'4 · Details','bk.st5':'5 · Summary',
